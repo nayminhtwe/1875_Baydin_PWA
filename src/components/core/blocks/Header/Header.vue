@@ -49,7 +49,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-
+<li><router-link to="/about">About</router-link></li>
                                         <!-- blog -->
                                         <li>
                                             <a href="blog-right.html">Blog</a>
