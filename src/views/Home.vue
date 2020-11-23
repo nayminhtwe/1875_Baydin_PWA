@@ -123,7 +123,19 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  name: `Home`
+  name: `Home`,
+  computed: {
+    ...mapGetters({
+      getCategories: 'categoryStore/allCategories',
+    }),
+  },
+  created() {
+    if (this.getCategories.length === 0) {
+        this.$store.dispatch('categoryStore/allCategories')
+      }
+  }
 };
 </script>
