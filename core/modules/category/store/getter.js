@@ -1,12 +1,15 @@
 const getters = {
-  allCategories (state) {
+  getCategories (state) {
     return state.list
   },
-  specialCategories (state, getters) {
-    return getters.allCategories.filter(category => category.web_url)
+  getSpecialCategories (state, getters) {
+    return getters.getCategories.filter(category => category.web_url)
   },
-  normalCategories (state, getters) {
-    return getters.allCategories.filter(category => !category.web_url)
+  getNormalCategories (state, getters) {
+    return getters.getCategories.filter(category => !category.web_url)
+  },
+  getCurrentCategory (state) {
+    return state.current;
   },
 }
 

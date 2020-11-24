@@ -36,17 +36,21 @@
             <div class="item-media">
               <img :src="category.image" alt="img">
               <div class="media-links">
-                <a class="abs-link" title="" href="service-single.html"></a>
+                <router-link class="abs-link" :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}" />
+                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
               </div>
             </div>
             <div class="item-content">
               <h5 class="mt-0 links-maincolor2">
-                <a href="service-single.html">{{ category.title }}</a>
+                <router-link :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}">
+                  {{ category.title }}
+                </router-link>
+                <!-- <a href="service-single.html">{{ category.title }}</a> -->
               </h5>
               <p>
                 {{ category.subtitle }}
               </p>
-              <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a>
+              <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
             </div>
           </div>
         </div><!-- .col-* -->
@@ -63,9 +67,9 @@ export default {
   name: `Home`,
   computed: {
     ...mapGetters({
-      getCategories: 'categoryStore/allCategories',
-      specialCategories: 'categoryStore/specialCategories',
-      normalCategories: 'categoryStore/normalCategories',
+      getCategories: 'categoryStore/getCategories',
+      specialCategories: 'categoryStore/getSpecialCategories',
+      normalCategories: 'categoryStore/getNormalCategories',
     }),
   },
   created() {
