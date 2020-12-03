@@ -9,9 +9,15 @@ const actions = {
       commit(types.ALL_CATEGORIES_SUCCESS, response.data.data);
     });
   },
-  singleCategory({ commit, rootGetters}) {
+  // singleCategory({ commit, rootGetters}) {
+  //   commit(types.CATEGORY_BY_ID);
+  //   HTTP.get(`category/${rootGetters['getRouteParams'].categoryId}`).then((response) => {
+  //     commit(types.CATEGORY_BY_ID_SUCCESS, response.data);
+  //   });
+  // },
+  singleCategory({ commit }, categoryId) {
     commit(types.CATEGORY_BY_ID);
-    HTTP.get(`category/${rootGetters['getRouteParams'].categoryId}`).then((response) => {
+    HTTP.get(`category/${categoryId}`).then((response) => {
       commit(types.CATEGORY_BY_ID_SUCCESS, response.data);
     });
   },

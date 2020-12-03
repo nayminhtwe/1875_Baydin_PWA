@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const Normal = () => import(/* webpackChunkName: "about" */ '../views/Normal.vue')
+const Content = () => import(/* webpackChunkName: "about" */ '../views/Content.vue')
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Normal
+  },
+  {
+    path: '/content/:categoryId',
+    name: 'content',
+    component: Content
   }
 ]
 
