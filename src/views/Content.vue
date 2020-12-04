@@ -5,7 +5,7 @@
         <div class="col-12">
           <div class="vertical-item bg-darkblue text-center content-padding padding-big">
             <div class="item-media">
-              <img :src="getCurrentCategory.image" alt="img" />
+              <img :src="getCurrentCategory.image" alt="img" v-if="getCurrentCategory.image"/>
             </div>
             <div class="item-content max-content" v-if="contents.length !== 0">
               <p v-for="content in contents" :key="content.id">{{ JSON.parse(content.content) }}</p>
