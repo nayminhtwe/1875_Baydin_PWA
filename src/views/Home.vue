@@ -15,16 +15,16 @@
               </div>
             </div>
             <div class="item-content">
-              <h5 class="mt-0 links-maincolor2">
+              <p class="mt-0 links-maincolor2">
                 <router-link :to="{ name: 'content', params: { categoryId: category.id }}">
                   {{ category.title }}
                 </router-link>
                 <!-- <a href="service-single.html">{{ category.title }}</a> -->
-              </h5>
+              </p>
               <p>
                 {{ category.subtitle }}
               </p>
-              <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a>
+              <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
             </div>
           </div>
         </div><!-- .col-* -->
@@ -45,12 +45,12 @@
               </div>
             </div>
             <div class="item-content">
-              <h5 class="mt-0 links-maincolor2">
+              <p class="mt-0 links-maincolor2">
                 <router-link :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}">
                   {{ category.title }}
                 </router-link>
                 <!-- <a href="service-single.html">{{ category.title }}</a> -->
-              </h5>
+              </p>
               <p>
                 {{ category.subtitle }}
               </p>

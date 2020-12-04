@@ -19,16 +19,16 @@
               </div>
               <div class="item-content">
                 <h5 class="mt-0 links-maincolor2">
-                  <router-link :to="{ name: 'content', params: { categoryId: category.id }}">
+                <router-link :to="{ name: 'content', params: { categoryId: category.id }}">
                   {{ category.title }}
                 </router-link>
                   <!-- <a href="service-single.html">{{ category.title }}</a> -->
                 </h5>
                 <p>{{ category.subtitle }}</p>
-                <a href="service-single.html" class="mt-30 font-2">
+                <!-- <a href="service-single.html" class="mt-30 font-2">
                   Read Now
                   <i class="fa fa-caret-right color-main ml-2"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
