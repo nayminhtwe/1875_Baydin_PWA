@@ -8,7 +8,7 @@
               <img :src="getCurrentCategory.image" alt="img" v-if="getCurrentCategory.image" />
             </div>
             <div class="item-content max-content">
-              <p v-for="content in contents" :key="content.id">{{ JSON.parse(content.content)[0] }}</p>
+              <p v-for="content in getContents" :key="content.id">{{ JSON.parse(content.content)[0] }}</p>
             </div>
           </div>
           <div class="share_buttons social_part">
@@ -31,35 +31,21 @@
 
 <script>
 import { mapGetters } from "vuex";
-import { HTTP } from "@core/lib/http-common";
+// import { HTTP } from "@core/lib/http-common";
 
 export default {
   name: `Normal`,
-  data() {
-    return {
-      contents: []
-    };
-  },
   computed: {
     ...mapGetters({
-      getCurrentCategory: "categoryStore/getCurrentCategory"
+      getCurrentCategory: "categoryStore/getCurrentCategory",
+      getContents: "categoryStore/getContents"
     })
   },
   created() {
     this.$store.dispatch(
-      "categoryStore/singleCategory",
+      "categoryStore/getContents",
       this.$route.params.categoryId
     );
-  },
-  watch: {
-    getCurrentCategory(category) {
-      HTTP.defaults.headers.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTYwNTQ5OTkxN30.cW49ls9-1aRANVvbQReNGW4qqMfab-cjLJxFu4qmDaM`;
-      HTTP.get(`content?category_id=1&content_category_id=${category.id}`).then(
-        response => {
-          this.contents = response.data.data;
-        }
-      );
-    }
   }
 };
 </script>

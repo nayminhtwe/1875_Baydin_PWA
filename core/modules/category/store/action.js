@@ -9,16 +9,21 @@ const actions = {
       commit(types.ALL_CATEGORIES_SUCCESS, response.data.data);
     });
   },
-  // singleCategory({ commit, rootGetters}) {
-  //   commit(types.CATEGORY_BY_ID);
-  //   HTTP.get(`category/${rootGetters['getRouteParams'].categoryId}`).then((response) => {
-  //     commit(types.CATEGORY_BY_ID_SUCCESS, response.data);
-  //   });
-  // },
-  singleCategory({ commit }, categoryId) {
+  async singleCategory({ commit }, categoryId) {
     commit(types.CATEGORY_BY_ID);
-    HTTP.get(`category/${categoryId}`).then((response) => {
+    await HTTP.get(`category/${categoryId}`).then((response) => {
       commit(types.CATEGORY_BY_ID_SUCCESS, response.data);
+    });
+  },
+  async getContents({ commit, dispatch, getters }, categoryId) {
+    commit(types.GET_CONTENTS);
+    await dispatch("singleCategory", categoryId);
+
+    HTTP.defaults.headers.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTYwNTQ5OTkxN30.cW49ls9-1aRANVvbQReNGW4qqMfab-cjLJxFu4qmDaM`;
+    HTTP.get(
+      `content?category_id=1&content_category_id=${getters.getCurrentCategory.id}`
+    ).then((response) => {
+      commit(types.GET_CONTENTS_SUCCESS, response.data.data);
     });
   },
 };

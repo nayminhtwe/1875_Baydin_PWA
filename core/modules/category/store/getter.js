@@ -11,6 +11,9 @@ const getters = {
   getCurrentCategory (state) {
     return state.current;
   },
+  getContents (state) {
+    return state.contents;
+  },
 }
 
 export default getters
