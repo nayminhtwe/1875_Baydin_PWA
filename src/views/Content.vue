@@ -7,7 +7,7 @@
             <div class="item-media">
               <img :src="getCurrentCategory.image" alt="img" v-if="getCurrentCategory.image" />
             </div>
-            <div class="item-content max-content" v-if="contents.length !== 0">
+            <div class="item-content max-content">
               <p v-for="content in contents" :key="content.id">{{ JSON.parse(content.content)[0] }}</p>
             </div>
           </div>
