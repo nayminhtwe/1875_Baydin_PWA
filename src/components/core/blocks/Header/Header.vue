@@ -6,7 +6,7 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-xl-6 col-lg-4 col-md-4 text-lg-left text-center">
-								<a href="./" class="logo">
+								<a href="/" class="logo">
 									<img src="@/images/logo.png" alt="img">
 									<span class="logo-text color-darkgrey">vedi</span>
 								</a>
