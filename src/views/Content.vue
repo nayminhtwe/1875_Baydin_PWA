@@ -53,10 +53,9 @@ export default {
   },
   watch: {
     getCurrentCategory(category) {
-      console.log(category);
+      HTTP.defaults.headers.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTYwNTQ5OTkxN30.cW49ls9-1aRANVvbQReNGW4qqMfab-cjLJxFu4qmDaM`;
       HTTP.get(`content?category_id=1&content_category_id=${category.id}`).then(
         response => {
-          console.log(this.getCurrentCategory.id, response);
           this.contents = response.data.data;
         }
       );

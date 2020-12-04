@@ -7,8 +7,6 @@ const userStore = {
   state: {
     token: '',
     refreshToken: '',
-    groupToken: '',
-    groupId: null,
     current: null,
     current_storecode: '',
     session_started: new Date(),
