@@ -6,17 +6,11 @@
 						<div class="col-12">
 							<div class="vertical-item bg-darkblue text-center content-padding padding-big">
 								<div class="item-media">
-									<img src="@/images/services/img_7.jpg" alt="img">
+									<img :src="getCurrentCategory.image" alt="img">
 								</div>
 								<div class="item-content max-content">
-									<p>
-										Stet clita kasd gubergren, no takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-									</p>
-									<p>
-										Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Stet clita kasd gubergren, no takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-									</p>
-									<p>
-										Sed diam nonumy eirmod tempor invidunt. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+									<p v-for="content in contents" :key="content.id">
+										{{ JSON.parse(content.content) }}
 									</p>
 								</div>
 							</div>
@@ -35,9 +29,15 @@
 
 <script>
 import { mapGetters } from "vuex";
+import { HTTP } from "@core/lib/http-common";
 
 export default {
   name: `Normal`,
+  data() {
+	return {
+		contents: [],
+	}
+  },
   computed: {
     ...mapGetters({
       getCurrentCategory: "categoryStore/getCurrentCategory"
@@ -45,6 +45,11 @@ export default {
   },
   created() {
     this.$store.dispatch("categoryStore/singleCategory", this.$route.params.categoryId);
+  },
+  mounted() {
+	HTTP.get(`content?category_id=1&content_category_id=173`).then((response) => {
+		this.contents = response.data.data;
+    });
   }
 };
 </script>
