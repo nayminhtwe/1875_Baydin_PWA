@@ -5,10 +5,10 @@
         <div class="col-12">
           <div class="vertical-item bg-darkblue text-center content-padding padding-big">
             <div class="item-media">
-              <img :src="getCurrentCategory.image" alt="img" v-if="getCurrentCategory.image"/>
+              <img :src="getCurrentCategory.image" alt="img" v-if="getCurrentCategory.image" />
             </div>
             <div class="item-content max-content" v-if="contents.length !== 0">
-              <p v-for="content in contents" :key="content.id">{{ JSON.parse(content.content) }}</p>
+              <p v-for="content in contents" :key="content.id">{{ JSON.parse(content.content)[0] }}</p>
             </div>
           </div>
           <div class="share_buttons social_part">
@@ -45,17 +45,22 @@ export default {
       getCurrentCategory: "categoryStore/getCurrentCategory"
     })
   },
-  async created() {
-    await this.$store.dispatch(
+  created() {
+    this.$store.dispatch(
       "categoryStore/singleCategory",
       this.$route.params.categoryId
-	);
-	HTTP.get(
-      `content?category_id=1&content_category_id=180`
-    ).then(response => {
-      console.log(this.getCurrentCategory.id, response);
-      this.contents = response.data.data;
-    });
+    );
   },
+  watch: {
+    getCurrentCategory(category) {
+      console.log(category);
+      HTTP.get(`content?category_id=1&content_category_id=${category.id}`).then(
+        response => {
+          console.log(this.getCurrentCategory.id, response);
+          this.contents = response.data.data;
+        }
+      );
+    }
+  }
 };
 </script>
