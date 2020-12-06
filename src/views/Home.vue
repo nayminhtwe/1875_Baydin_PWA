@@ -10,13 +10,13 @@
             <div class="item-media">
               <img :src="category.image" alt="img">
               <div class="media-links">
-                <router-link class="abs-link" :to="{ name: 'content', params: { categoryId: category.id }}" />
+                <router-link class="abs-link" :to="{ name: 'special', params: { categoryId: category.id }}" />
                 <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
               </div>
             </div>
             <div class="item-content">
               <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'content', params: { categoryId: category.id }}">
+                <router-link :to="{ name: 'special', params: { categoryId: category.id }}">
                   {{ category.title }}
                 </router-link>
                 <!-- <a href="service-single.html">{{ category.title }}</a> -->
