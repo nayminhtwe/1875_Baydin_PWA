@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 const Normal = () => import(/* webpackChunkName: "about" */ '../views/Normal.vue')
 const Content = () => import(/* webpackChunkName: "about" */ '../views/Content.vue')
 const Special = () => import(/* webpackChunkName: "about" */ '../views/Special.vue')
+const Direct = () => import(/* webpackChunkName: "about" */ '../views/Direct.vue')
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path: '/special/:categoryId',
     name: 'special',
     component: Special
+  },
+  {
+    path: '/direct/:categoryName',
+    name: 'direct',
+    component: Direct
   },
   {
     path: '/content/:categoryId',
