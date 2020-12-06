@@ -188,6 +188,31 @@
       </div>
 
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+						<h1>Phone</h1>
+				</div>
+        <div class="col-xl-4 col-lg-6" >
+          <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
+            <div class="item-media">
+              <img src="https://s3.ap-southeast-1.amazonaws.com/assets.myclip.com/smart/S8q7H36jcwHbDaOsuQyeVZ3AAHQL8wqjQ3TIzbcq.png" alt="img">
+              <div class="media-links">
+                <router-link class="abs-link" :to="{ name: 'phone'}" />
+              </div>
+            </div>
+            <div class="item-content">
+              <p class="mt-0 links-maincolor2">
+                <router-link :to="{ name: 'phone'}">
+                  ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။
+                </router-link>
+              </p>
+            </div>
+          </div>
+        </div><!-- .col-* -->
+      </div>
+
+    </div>
   </section>
 </template>
 

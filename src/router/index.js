@@ -8,6 +8,7 @@ const Normal = () => import(/* webpackChunkName: "about" */ '../views/Normal.vue
 const Content = () => import(/* webpackChunkName: "about" */ '../views/Content.vue')
 const Special = () => import(/* webpackChunkName: "about" */ '../views/Special.vue')
 const Direct = () => import(/* webpackChunkName: "about" */ '../views/Direct.vue')
+const Phone = () => import(/* webpackChunkName: "about" */ '../views/Phone.vue')
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: '/direct/:categoryName',
     name: 'direct',
     component: Direct
+  },
+  {
+    path: '/phone',
+    name: 'phone',
+    component: Phone
   },
   {
     path: '/content/:categoryId',
