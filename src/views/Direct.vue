@@ -13,258 +13,97 @@
                 <div class="woocommerce-MyAccount-content">
                   <form
                     id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/lovebaydin"
+                    action="https://chatbothoro.blueplanet.com.mm/direct/baydin"
                     method="post"
                     role="form"
                     style="display: block;"
-                    v-if="getCurrentCategory.id === 275"
                   >
-                    <h3 class="mm-font __mm" align="center">{{ getCurrentCategory.title }}</h3>
-                    <p
-                      class="mm-font __mm"
-                      align="center"
-                    >အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
-
-                    <label class="mm-font __mm">အမျိုးသမီး</label>
-                    <br />
-                    <br />
-                    <label class="form-group">
-                      <span class="mm-font __mm __mm">အမည်</span>
-                      <input type="text" class="form-control" name="g_name" required />
-                    </label>
-                    <label class="form-group mm-font">
-                      <span class="mm-font __mm">မွေးနေ့</span>
-                      <select name="g_birth_day" class="form-control mm-font" required>
-                        <option value="တနင်္ဂနွေ" class="__mm">တနင်္ဂနွေ</option>
-                        <option value="တနင်္လာ" class="__mm">တနင်္လာ</option>
-                        <option value="အင်္ဂါ" class="__mm">အင်္ဂါ</option>
-                        <option value="ဗုဒ္ဓဟူး" class="__mm">ဗုဒ္ဓဟူး</option>
-                        <option value="ကြာသပတေး" class="__mm">ကြာသပတေး</option>
-                        <option value="သောကြာ" class="__mm">သောကြာ</option>
-                        <option value="စနေ" class="__mm">စနေ</option>
-                      </select>
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးသက္ကရာဇ်(7.11.1990)</span>
-                      <input type="text" class="form-control" name="g_birth_date" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေရပ်လိပ်စာ</span>
-                      <input type="text" class="form-control" name="g_address" required />
-                    </label>
-
-                    <p style="font-size: 30px">
-                      <i class="fa fa-heart" aria-hidden="true"></i>
-                    </p>
-                    <label class="mm-font __mm">အမျိုးသား</label>
-                    <br />
-                    <br />
-                    <label class="form-group">
-                      <span class="mm-font __mm">အမည်</span>
-                      <input type="text" class="form-control" name="b_name" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးနေ့</span>
-                      <select name="b_birth_day" class="form-control mm-font" required>
-                        <option value="တနင်္ဂနွေ" class="mm-font __mm">တနင်္ဂနွေ</option>
-                        <option value="တနင်္လာ" class="mm-font __mm">တနင်္လာ</option>
-                        <option value="အင်္ဂါ" class="mm-font __mm">အင်္ဂါ</option>
-                        <option value="ဗုဒ္ဓဟူး" class="__mm">ဗုဒ္ဓဟူး</option>
-                        <option value="ကြာသပတေး" class="__mm">ကြာသပတေး</option>
-                        <option value="သောကြာ" class="__mm">သောကြာ</option>
-                        <option value="စနေ" class="__mm">စနေ</option>
-                      </select>
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးသက္ကရာဇ်(5.12.1990)</span>
-                      <input type="text" class="form-control" name="b_birth_date" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေရပ်လိပ်စာ</span>
-                      <input type="text" class="form-control" name="b_address" required />
-                    </label>
-
-                    <label class="form-group">
-                      <span for class="mm-font __mm">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
-                      <input type="text" class="form-control" name="phone_number" required />
-                    </label>
-                    <p>
-                      <input
-                        type="submit"
-                        class="woocommerce-Button button mm-font __mm"
-                        name="save_account_details"
-                        value="အတည်ပြုမည်"
-                      />
-                    </p>
-                  </form>
-                  <form
-                    id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/horo/child/naming/create"
-                    method="post"
-                    role="form"
-                    style="display: block;"
-                    v-if="getCurrentCategory.id === 11"
-                  >
-                    <h3 class="mm-font __mm" align="center">{{ getCurrentCategory.title }}</h3>
-                    <p
-                      class="mm-font __mm"
-                      align="center"
-                    >အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးနေ့(30.11.2004)</span>
-                      <input type="text" class="form-control" name="birth_date" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးချိန်</span>
-                      <input type="text" class="form-control" name="birth_time" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">ဖခင်အမည်</span>
-                      <input type="text" class="form-control" name="father_name" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မိခင်အမည်</span>
-                      <input type="text" class="form-control" name="mother_name" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">မွေးရပ်</span>
-                      <input type="text" class="form-control" name="birth_place" required />
-                    </label>
-                    <p
-                      class="mm-font __mm"
-                    >မှတ်ချက်။ ။ မိမိပေးလိုသော နေ့နံများကိုလည်းပြောပြပေးပါရန်။</p>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေ့နံ</span>
-                      <input type="text" class="form-control" name="nyih_nan" required />
-                    </label>
-
-                    <input type="radio" name="gender" value="0" required />
-                    <span for class="mm-font __mm">ယောကျ်ားလေး</span>
-                    <input type="radio" name="gender" value="1" required />
-                    <span for class="mm-font __mm">မိန်းကလေး</span>
-                    <br />
-                    <br />
-
-                    <label class="form-group">
-                      <span for class="mm-font __mm">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
-                      <input type="text" class="form-control" name="phone_number" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေရပ်လိပ်စာ (မြို့နယ်)</span>
-                      <input type="text" class="form-control" name="address" required />
-                    </label>
-                    <p>
-                      <input
-                        type="submit"
-                        class="woocommerce-Button button mm-font __mm"
-                        name="save_account_details"
-                        value="အတည်ပြုမည်"
-                      />
-                    </p>
-                  </form>
-                  <form
-                    action="https://chatbothoro.blueplanet.com.mm/horo/business/naming/create"
-                    method="post"
-                    id="business-form"
-                    role="form"
-                    v-if="getCurrentCategory.id === 267"
-                  >
-                    <h3 class="mm-font __mm" align="center">{{ getCurrentCategory.title }}</h3>
-                    <p
-                      class="mm-font __mm"
-                      align="center"
-                    >အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
-                    <label class="form-group">
-                      <span class="mm-font __mm">လုပ်ငန်းရှင်အမည်</span>
-                      <input type="text" class="form-control" name="owner_name" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးနေ့ (30.11.2004)</span>
-                      <input type="text" class="form-control" name="birth_date" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">လုပ်ကိုင်မည့်လုပ်ငန်း</span>
-                      <input type="text" class="form-control" name="business_type" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">လုပ်ငန်းလိပ်စာ</span>
-                      <input type="text" class="form-control" name="address" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
-                      <input type="text" class="form-control" name="phone_number" required />
-                    </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေ့သား(လုပ်ငန်းရှင်)</span>
-                      <input type="text" class="form-control" name="nyih_tha" required />
-                    </label>
-                    <p>
-                      <input
-                        type="submit"
-                        class="woocommerce-Button button mm-font __mm"
-                        name="save_account_details"
-                        value="အတည်ပြုမည်"
-                      />
-                    </p>
-                  </form>
-                  <form
-                    id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/horo/one/year/create"
-                    method="post"
-                    role="form"
-                    style="display: block;"
-                    v-if="getCurrentCategory.id === 10"
-                  >
-                    
-                    <h3 class="mm-font __mm" align="center">{{ getCurrentCategory.title }}</h3>
-                    <p
-                      class="mm-font __mm"
-                      align="center"
-                    >အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးနေ့(30.11.2004)</span>
-                      <input type="text" class="form-control" name="birth_date" required />
-                    </label>
-                    <label class="form-group">
-                      <span class="mm-font __mm">မွေးချိန်</span>
-                      <input type="text" class="form-control" name="birth_time" required />
-                    </label>
+                    <p class="mm-font __mm" align="center">အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
                     <label class="form-group">
                       <span class="mm-font __mm">အမည်</span>
                       <input type="text" class="form-control" name="name" required />
                     </label>
-
                     <label class="form-group">
-                      <span for class="mm-font __mm">မွေးရပ်</span>
-                      <input type="text" class="form-control" name="birth_place" required />
+                      <span class="mm-font __mm">မွေးသက္ကရာဇ်</span>
+                      <input type="text" class="form-control" name="birth_date" required />
                     </label>
                     <label class="form-group">
-                      <span for class="mm-font __mm">အလုပ်အကိုင်</span>
-                      <input type="text" class="form-control" name="career" required />
+                      <span class="mm-font __mm">နေ့နံ</span>
+                      <input type="text" class="form-control" name="nyih_nan" required />
                     </label>
-                    <label class="form-group">
-                      <span for class="mm-font __mm">နေရပ်လိပ်စာ (မြို့နယ်)</span>
-                      <input type="text" class="form-control" name="address" required />
-                    </label>
-                    <input type="radio" name="marital_status" value="1" required />
+                    <input type="radio" name="marital_status" value="Yes" required />
                     <span for class="mm-font __mm">အိမ်ထောင်ရှိ</span>
-                    <input type="radio" name="marital_status" value="0" required />
+                    <input type="radio" name="marital_status" value="No" required />
                     <span for class="mm-font __mm">အိမ်ထောင်မရှိ</span>
                     <br />
                     <br />
-
                     <label class="form-group">
-                      <span for class="mm-font __mm">နေ့နံ</span>
-                      <input type="text" class="form-control" name="nyih_nan" required />
+                      <span for class="mm-font __mm">နေထိုင်သည့်မြို့</span>
+                      <input type="text" class="form-control" name="address" required />
                     </label>
+                    <input type="radio" name="gender" value="ကျား" required />
+                    <span for class="mm-font __mm">ကျား</span>
+                    <input type="radio" name="gender" value="မ" required />
+                    <span for class="mm-font __mm">မ</span>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <label class="form-group">
-                      <span for class="mm-font __mm">အဓိကသိချင်သောအကြောင်းအရာ</span>
-                      <input type="text" class="form-control" name="about" required />
+                      <span class="mm-font __mm">ဗေဒင်ဆရာ</span>
+                      <select name="baydin_sayar" class="form-control mm-font" required>
+                        <option value=" " class="mm-font __mm">ဗေဒင်ဆရာ ရွေးချယ်ပါ...</option>
+                        <option value="ဆရာမ သန့်ထားဆု" class="mm-font __mm">ဆရာမ သန့်ထားဆု</option>
+                        <option
+                          value="ဆရာ မင်းသုကျော်ခေါင်"
+                          class="mm-font __mm"
+                        >ဆရာ မင်းသုကျော်ခေါင်</option>
+                        <option value="ဆရာ ကျော်ဇောဟန်" class="__mm">ဆရာ ကျော်ဇောဟန်</option>
+                        <option value="ဆရာ မင်းသိမ်းခိုင်" class="__mm">ဆရာ မင်းသိမ်းခိုင်</option>
+                        <option value="ဆရာမ စောလှနွယ်နီ" class="__mm">ဆရာမ စောလှနွယ်နီ</option>
+                        <option value="ဆရာ မိုးမင်းသုခ" class="__mm">ဆရာ မိုးမင်းသုခ</option>
+                        <option value="ဆရာမ စောယုထွေး" class="__mm">ဆရာမ စောယုထွေး</option>
+                        <option value="ဆရာမ ယွန်းပိုးအိ" class="__mm">ဆရာမ ယွန်းပိုးအိ</option>
+                        <option value="ဆရာမ ဝင့်ယမုံဦး" class="__mm">ဆရာမ ဝင့်ယမုံဦး</option>
+                      </select>
                     </label>
                     <label class="form-group">
                       <span for class="mm-font __mm">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
                       <input type="text" class="form-control" name="phone_number" required />
                     </label>
+
+                    <p class="mm-font __mm">မေးလိုသည့်ကဏ္ဍကို ရွေးချယ်ပါ။</p>
+
+                    <div class="container options" ref="input">
+                      <label class="form-check-label customcheck" v-for="type in types" :key="type.id">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          :value="type.name"
+                          name="services[]"
+                          :checked="categoryName === type.name"
+                          @click="toggle(type)"
+                        />
+                        <span class="checkmark"></span>
+                        <span class="mm-font __mm">{{ type.mm_name }}</span>
+                      </label>
+                    </div>
+                    <br />
+                    <br />
+                    <p class="mm-font __mm">မေးမြန်းလိုသည့်အကြာင်းအရာကိုရေးပါ။</p>
+                    <label class="form-group">
+                      <textarea
+                        name="about"
+                        class="mm-font test"
+                        rows="10"
+                        cols="35"
+                        placeholder
+                        style="color: black;"
+                        required
+                      ></textarea>
+                    </label>
+
+                    <p class="mm-font" id="price">ဉာဏ်ပူဇော်ခ {{ price }}ကျပ် ဖြစ်ပါသည်။ ငွေပေးချေမှုအောင်မြင်ပြီးပါက နှစ်ရက်အတွင်း ပြန်လည်ဖြေကြားပေးပါမည်။</p>
                     <p>
                       <input
                         type="submit"
@@ -286,20 +125,44 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
+import types from '@core/i18n/resource/direct_types.json'
 export default {
   name: `Special`,
-  computed: {
-    ...mapGetters({
-      getCurrentCategory: "categoryStore/getCurrentCategory"
-    })
+  data() {
+    return {
+      price: 0,
+      types: [],
+      selected: {},
+    }
   },
   created() {
-    this.$store.dispatch(
-      "categoryStore/singleCategory",
-      this.$route.params.categoryId
-    );
+    this.types = types;
+  },
+  mounted() {
+    for (let type of types){
+      if(type.name === this.categoryName) {
+        this.selected[type.name] = true;
+        this.price = type.price;
+      } else {
+        this.selected[type.name] = false;
+      }
+      
+    }
+  },
+  computed: {
+    categoryName() {
+      return this.$route.params.categoryName;
+    }
+  },
+  methods: {
+    toggle(type) {
+      if(!this.selected[type.name]){
+        this.price += type.price;
+      } else {
+        this.price -= type.price;
+      }
+      this.selected[type.name] = !this.selected[type.name];
+    }
   }
 };
 </script>
@@ -309,5 +172,13 @@ input[type="radio"] {
   display: inline;
   margin-top: 8px;
   margin-left: 3px;
+}
+input[type="checkbox"] {
+  display: inline;
+  margin-top: 8px;
+}
+
+label {
+    display: block;
 }
 </style>
