@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-						<h1>Special</h1>
+						<h1 class="mm-font __mm cat">အထူးဟောစာတမ်းများ</h1>
 				</div>
         <div class="col-xl-4 col-lg-6" v-for="category in specialCategories" :key="category.id">
           <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
@@ -33,7 +33,7 @@
     </div><div class="container">
       <div class="row">
         <div class="col-md-12">
-						<h1>Normal</h1>
+						<h1 class="mm-font __mm cat">နေ့စဉ်၊ အပတ်စဉ်၊ လစဉ် ဟောစာတမ်းများ</h1>
 				</div>
         <div class="col-xl-4 col-lg-6" v-for="category in normalCategories" :key="category.id">
           <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
@@ -64,7 +64,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-						<h1>Direct</h1>
+						<h1 class="mm-font __mm cat">ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်</h1>
 				</div>
         <div class="col-xl-4 col-lg-6" v-for="type in types" :key="type.id">
           <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
@@ -89,7 +89,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-						<h1>Phone</h1>
+						<h1 class="mm-font __mm cat">ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။</h1>
 				</div>
         <div class="col-xl-4 col-lg-6" >
           <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
@@ -139,3 +139,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.cat {
+    font-size: 2em;
+}
+</style>

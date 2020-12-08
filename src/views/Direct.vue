@@ -51,7 +51,7 @@
                     <br />
                     <label class="form-group">
                       <span class="mm-font __mm">ဗေဒင်ဆရာ</span>
-                      <select name="baydin_sayar" class="form-control mm-font" required>
+                      <select name="baydin_sayar" class="mm-font __mm" required>
                         <option value=" " class="mm-font __mm">ဗေဒင်ဆရာ ရွေးချယ်ပါ...</option>
                         <option value="ဆရာမ သန့်ထားဆု" class="mm-font __mm">ဆရာမ သန့်ထားဆု</option>
                         <option

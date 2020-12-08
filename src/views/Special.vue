@@ -34,7 +34,7 @@
                     </label>
                     <label class="form-group mm-font">
                       <span class="mm-font __mm">မွေးနေ့</span>
-                      <select name="g_birth_day" class="form-control mm-font" required>
+                      <select name="g_birth_day" class="mm-font __mm" required>
                         <option value="တနင်္ဂနွေ" class="__mm">တနင်္ဂနွေ</option>
                         <option value="တနင်္လာ" class="__mm">တနင်္လာ</option>
                         <option value="အင်္ဂါ" class="__mm">အင်္ဂါ</option>
@@ -65,7 +65,7 @@
                     </label>
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးနေ့</span>
-                      <select name="b_birth_day" class="form-control mm-font" required>
+                      <select name="b_birth_day" class="mm-font __mm" required>
                         <option value="တနင်္ဂနွေ" class="mm-font __mm">တနင်္ဂနွေ</option>
                         <option value="တနင်္လာ" class="mm-font __mm">တနင်္လာ</option>
                         <option value="အင်္ဂါ" class="mm-font __mm">အင်္ဂါ</option>
