@@ -136,6 +136,8 @@ export default {
     if (this.getCategories.length === 0) {
         this.$store.dispatch('categoryStore/allCategories')
       }
+
+    this.kbzpay.startPay('KBZ00261c56010070436571da196b74a56a04140644911','appid=kp9539d5120b864436980c3f25966215&merch_code=200170&nonce_str=gXvnSZWWrJjqbkHUXBdlRubrTMKeLuzc&prepay_id=KBZ00261c56010070436571da196b74a56a04140644911&timestamp=1535166225&key=zKyBnbqZYQ0P^H^4SSaBu3Bw&hsJAYlZ','a6583b507f7f88ecae445faa9980dca8723f0f5b16b9032f47a83d9f332d32ce',{},{})  
   }
 };
 </script>
