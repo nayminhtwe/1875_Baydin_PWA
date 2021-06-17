@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50"
-    @click="startPay()"
-  >
+  <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -22,31 +19,11 @@
             </div>
           </div>
           <div class="share_buttons social_part">
-            <a
-              href="https://www.facebook.com"
-              class="color-bg-icon fa fa-facebook"
-              target="_blank"
-            ></a>
-            <a
-              href="https://twitter.com"
-              class="color-bg-icon fa fa-twitter"
-              target="_blank"
-            ></a>
-            <a
-              href="https://pinterest.com"
-              class="color-bg-icon fa fa-pinterest"
-              target="_blank"
-            ></a>
-            <a
-              href="https://instagram.com"
-              class="color-bg-icon fa fa-instagram"
-              target="_blank"
-            ></a>
-            <a
-              href="https://www.youtube.com"
-              class="color-bg-icon fa fa-youtube-play"
-              target="_blank"
-            ></a>
+            <button
+              name="pay"
+              style="margin-left: 120px;"
+              @click="startPay()"
+            >Pay Now</button>
           </div>
         </div>
         <!-- .col-* -->
