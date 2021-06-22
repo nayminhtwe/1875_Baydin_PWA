@@ -11,19 +11,19 @@
                 v-if="getCurrentCategory.image"
               />
             </div>
-            <div class="item-content max-content">
+            <div class="item-content max-content" style="word-break: break-all">
               <p
                 v-for="content in getContents"
                 :key="content.id"
               >{{ JSON.parse(content.content)[0] }}</p>
+              <button
+                      name="pay"
+                      @click="startPay()"
+              >Pay Now</button>
             </div>
           </div>
           <div class="share_buttons social_part">
-            <button
-              name="pay"
-              style="margin-left: 120px;"
-              @click="startPay()"
-            >Pay Now</button>
+
           </div>
         </div>
         <!-- .col-* -->

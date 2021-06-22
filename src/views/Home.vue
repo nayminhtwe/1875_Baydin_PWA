@@ -1,149 +1,155 @@
 <template>
-  <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-						<h1 class="mm-font __mm cat">အထူးဟောစာတမ်းများ</h1>
-				</div>
-        <div class="col-xl-4 col-lg-6" v-for="category in specialCategories" :key="category.id">
-          <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
-            <div class="item-media">
-              <img :src="category.image" alt="img">
-              <div class="media-links">
-                <router-link class="abs-link" :to="{ name: 'special', params: { categoryId: category.id }}" />
-                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
-              </div>
+    <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mm-font __mm cat">အထူးဟောစာတမ်းများ</h1>
+                </div>
+                <div class="col-xl-4 col-lg-6" v-for="category in specialCategories" :key="category.id">
+                    <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
+                        <div class="item-media">
+                            <img :src="category.image" alt="img">
+                            <div class="media-links">
+                                <router-link class="abs-link"
+                                             :to="{ name: 'special', params: { categoryId: category.id }}"/>
+                                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <p class="mt-0 links-maincolor2">
+                                <router-link :to="{ name: 'special', params: { categoryId: category.id }}">
+                                    {{ category.title }}
+                                </router-link>
+                                <!-- <a href="service-single.html">{{ category.title }}</a> -->
+                            </p>
+                            <p>
+                                {{ category.subtitle }}
+                            </p>
+                            <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div><!-- .col-* -->
             </div>
-            <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'special', params: { categoryId: category.id }}">
-                  {{ category.title }}
-                </router-link>
-                <!-- <a href="service-single.html">{{ category.title }}</a> -->
-              </p>
-              <p>
-                {{ category.subtitle }}
-              </p>
-              <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
-            </div>
-          </div>
-        </div><!-- .col-* -->
-      </div>
 
-    </div><div class="container">
-      <div class="row">
-        <div class="col-md-12">
-						<h1 class="mm-font __mm cat">နေ့စဉ်၊ အပတ်စဉ်၊ လစဉ် ဟောစာတမ်းများ</h1>
-				</div>
-        <div class="col-xl-4 col-lg-6" v-for="category in normalCategories" :key="category.id">
-          <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
-            <div class="item-media">
-              <img :src="category.image" alt="img">
-              <div class="media-links">
-                <router-link class="abs-link" :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}" />
-                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
-              </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mm-font __mm cat">နေ့စဉ်၊ အပတ်စဉ်၊ လစဉ် ဟောစာတမ်းများ</h1>
+                </div>
+                <div class="col-xl-4 col-lg-6" v-for="category in normalCategories" :key="category.id">
+                    <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
+                        <div class="item-media">
+                            <img :src="category.image" alt="img">
+                            <div class="media-links">
+                                <router-link class="abs-link"
+                                             :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}"/>
+                                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <p class="mt-0 links-maincolor2">
+                                <router-link
+                                        :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}">
+                                    {{ category.title }}
+                                </router-link>
+                                <!-- <a href="service-single.html">{{ category.title }}</a> -->
+                            </p>
+                            <!--<p>-->
+                                <!--{{ category.subtitle }}-->
+                            <!--</p>-->
+                            <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div><!-- .col-* -->
             </div>
-            <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}">
-                  {{ category.title }}
-                </router-link>
-                <!-- <a href="service-single.html">{{ category.title }}</a> -->
-              </p>
-              <p>
-                {{ category.subtitle }}
-              </p>
-              <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
-            </div>
-          </div>
-        </div><!-- .col-* -->
-      </div>
 
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-						<h1 class="mm-font __mm cat">ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်</h1>
-				</div>
-        <div class="col-xl-4 col-lg-6" v-for="type in types" :key="type.id">
-          <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
-            <div class="item-media">
-              <img :src="type.image" alt="img">
-              <div class="media-links">
-                <router-link class="abs-link" :to="{ name: 'direct', params: { categoryName: type.name }}" />
-              </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mm-font __mm cat">ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်</h1>
+                </div>
+                <div class="col-xl-4 col-lg-6" v-for="type in types" :key="type.id">
+                    <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
+                        <div class="item-media">
+                            <img :src="type.image" alt="img">
+                            <div class="media-links">
+                                <router-link class="abs-link"
+                                             :to="{ name: 'direct', params: { categoryName: type.name }}"/>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <p class="mt-0 links-maincolor2">
+                                <router-link :to="{ name: 'direct', params: { categoryName: type.name }}">
+                                    {{ type.mm_name }}
+                                </router-link>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- .col-* -->
             </div>
-            <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'direct', params: { categoryName: type.name }}">
-                  {{ type.mm_name }}
-                </router-link>
-              </p>
-            </div>
-          </div>
-        </div><!-- .col-* -->
-      </div>
 
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-						<h1 class="mm-font __mm cat">ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။</h1>
-				</div>
-        <div class="col-xl-4 col-lg-6" >
-          <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
-            <div class="item-media">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/assets.myclip.com/smart/S8q7H36jcwHbDaOsuQyeVZ3AAHQL8wqjQ3TIzbcq.png" alt="img">
-              <div class="media-links">
-                <router-link class="abs-link" :to="{ name: 'phone'}" />
-              </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mm-font __mm cat">ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။</h1>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
+                        <div class="item-media">
+                            <img src="https://s3.ap-southeast-1.amazonaws.com/assets.myclip.com/smart/S8q7H36jcwHbDaOsuQyeVZ3AAHQL8wqjQ3TIzbcq.png"
+                                 alt="img">
+                            <div class="media-links">
+                                <router-link class="abs-link" :to="{ name: 'phone'}"/>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <p class="mt-0 links-maincolor2">
+                                <router-link :to="{ name: 'phone'}">
+                                    ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။
+                                </router-link>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- .col-* -->
             </div>
-            <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'phone'}">
-                  ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။
-                </router-link>
-              </p>
-            </div>
-          </div>
-        </div><!-- .col-* -->
-      </div>
 
-    </div>
-  </section>
+        </div>
+    </section>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import types from '@core/i18n/resource/direct_types.json'
+    import {mapGetters} from 'vuex'
+    import types from '@core/i18n/resource/direct_types.json'
 
-export default {
-  name: `Home`,
-  data() {
-    return {
-      types: types
-    }
-  },
-  computed: {
-    ...mapGetters({
-      getCategories: 'categoryStore/getCategories',
-      specialCategories: 'categoryStore/getSpecialCategories',
-      normalCategories: 'categoryStore/getNormalCategories',
-    }),
-  },
-  created() {
-    if (this.getCategories.length === 0) {
-        this.$store.dispatch('categoryStore/allCategories')
-      }
+    export default {
+        name: `Home`,
+        data() {
+            return {
+                types: types
+            }
+        },
+        computed: {
+            ...mapGetters({
+                getCategories: 'categoryStore/getCategories',
+                specialCategories: 'categoryStore/getSpecialCategories',
+                normalCategories: 'categoryStore/getNormalCategories',
+            }),
+        },
+        created() {
+            if (this.getCategories.length === 0) {
+                this.$store.dispatch('categoryStore/allCategories')
+            }
 
-    this.kbzpay.startPay('KBZ00261c56010070436571da196b74a56a04140644911','appid=kp9539d5120b864436980c3f25966215&merch_code=200170&nonce_str=gXvnSZWWrJjqbkHUXBdlRubrTMKeLuzc&prepay_id=KBZ00261c56010070436571da196b74a56a04140644911&timestamp=1535166225&key=zKyBnbqZYQ0P^H^4SSaBu3Bw&hsJAYlZ','a6583b507f7f88ecae445faa9980dca8723f0f5b16b9032f47a83d9f332d32ce',{},{})  
-  }
-};
+            this.kbzpay.startPay('KBZ00261c56010070436571da196b74a56a04140644911', 'appid=kp9539d5120b864436980c3f25966215&merch_code=200170&nonce_str=gXvnSZWWrJjqbkHUXBdlRubrTMKeLuzc&prepay_id=KBZ00261c56010070436571da196b74a56a04140644911&timestamp=1535166225&key=zKyBnbqZYQ0P^H^4SSaBu3Bw&hsJAYlZ', 'a6583b507f7f88ecae445faa9980dca8723f0f5b16b9032f47a83d9f332d32ce', {}, {})
+        }
+    };
 </script>
 
 <style scoped>
-.cat {
-    font-size: 2em;
-}
+    .cat {
+        font-size: 2em;
+    }
 </style>
