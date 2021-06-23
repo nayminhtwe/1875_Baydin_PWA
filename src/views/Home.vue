@@ -1,7 +1,11 @@
 <template>
   <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
-    <div class="col-md-12">
-      <h1 class="mm-font __mm cat">{{ getResponse }}</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mm-font __mm cat">{{ getResponse }}</h1>
+        </div>
+      </div>
     </div>
 
     <div class="container">
