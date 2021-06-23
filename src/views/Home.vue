@@ -1,6 +1,9 @@
 <template>
   <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
-    {{ getResponse}}
+    <div class="col-md-12">
+      <h1 class="mm-font __mm cat">{{ getResponse }}</h1>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -73,9 +76,9 @@
                 </router-link>
                 <!-- <a href="service-single.html">{{ category.title }}</a> -->
               </p>
-              <p>
-                {{ category.subtitle }}
-              </p>
+              <!--<p>-->
+              <!--{{ category.subtitle }}-->
+              <!--</p>-->
               <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
             </div>
           </div>

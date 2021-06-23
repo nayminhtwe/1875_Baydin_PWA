@@ -2,576 +2,573 @@
     <div class="header_absolute ">
 
 				<!--topline section visible only on small screens|-->
-				<section class="page_topline ds s-py-30 ">
+				<section class="page_topline dd s-py-30 ">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-xl-6 col-lg-4 col-md-4 text-lg-left text-center">
 								<a href="/" class="logo">
 									<img src="@/images/logo.png" alt="img">
-									<span class="logo-text color-darkgrey">vedi</span>
 								</a>
 							</div>
 							<div class="col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
-								<a class="fs-24 links-maincolor-hover font-2" href="tel:+88003532455"><mark>8 800</mark> 353-24-55</a>
-								<a href="" class="btn btn-outline-maincolor btn-medium  d-none d-md-block">
-									Book Reading Now
-								</a>
-							</div>
+								<a href="tel:1875" class="fs-24 links-maincolor-hover font-2">
+									<mark>☎ Call</mark>
+									- 1875</a></div>
 						</div>
 					</div>
 				</section>
 				<!--eof topline-->
 
 				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
-				<div class="page_header_wrapper ds ms affix-top-wrapper" style="height: 79px;"><header class="page_header ds ms s-overlay justify-nav-start affix-top">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-xl-9 col-1 order-2 order-xl-1">
-								<div class="nav-wrap">
+				<!--<div class="page_header_wrapper ds ms affix-top-wrapper" style="height: 79px;"><header class="page_header ds ms s-overlay justify-nav-start affix-top">-->
+					<!--<div class="container">-->
+						<!--<div class="row align-items-center">-->
+							<!--<div class="col-xl-9 col-1 order-2 order-xl-1">-->
+								<!--<div class="nav-wrap">-->
 
-									<!-- main nav start -->
-									<nav class="top-nav" style="">
-										<ul class="nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
-											<li class="active">
-												<a href="index.html" class="sf-with-ul">Home</a><span class="sf-menu-item-mobile-toggler"></span>
-												<ul style="display: none; margin-top: 5px;">
-													<li>
-														<a href="index.html">MultiPage</a>
-													</li>
-													<li>
-														<a href="index_singlepage.html">Single Page</a>
-													</li>
-													<li>
-														<a href="index_blocks.html">Homeblocks</a>
-													</li>
-												</ul>
-											</li>
+									<!--&lt;!&ndash; main nav start &ndash;&gt;-->
+									<!--<nav class="top-nav" style="">-->
+										<!--<ul class="nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">-->
+											<!--<li class="active">-->
+												<!--<a href="index.html" class="sf-with-ul">Home</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<ul style="display: none; margin-top: 5px;">-->
+													<!--<li>-->
+														<!--<a href="index.html">MultiPage</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="index_singlepage.html">Single Page</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="index_blocks.html">Homeblocks</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</li>-->
 
-											<!-- blog -->
-											<li class="">
-												<a href="blog-right.html" class="sf-with-ul">Blog</a><span class="sf-menu-item-mobile-toggler"></span>
-												<ul style="display: none; margin-top: 5px;">
+											<!--&lt;!&ndash; blog &ndash;&gt;-->
+											<!--<li class="">-->
+												<!--<a href="blog-right.html" class="sf-with-ul">Blog</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<ul style="display: none; margin-top: 5px;">-->
 
-													<li>
-														<a href="blog-right.html">Right Sidebar</a>
-													</li>
-													<li>
-														<a href="blog-left.html">Left Sidebar</a>
-													</li>
-													<li>
-														<a href="blog-full.html">No Sidebar</a>
-													</li>
-													<li>
-														<a href="blog-grid.html">Blog Grid</a>
-													</li>
+													<!--<li>-->
+														<!--<a href="blog-right.html">Right Sidebar</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="blog-left.html">Left Sidebar</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="blog-full.html">No Sidebar</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="blog-grid.html">Blog Grid</a>-->
+													<!--</li>-->
 
-													<li>
-														<a href="blog-single-right.html" class="sf-with-ul">Post</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="blog-single-right.html">Right Sidebar</a>
-															</li>
-															<li>
-																<a href="blog-single-left.html">Left Sidebar</a>
-															</li>
-															<li>
-																<a href="blog-single-full.html">No Sidebar</a>
-															</li>
-														</ul>
-													</li>
+													<!--<li>-->
+														<!--<a href="blog-single-right.html" class="sf-with-ul">Post</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="blog-single-right.html">Right Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="blog-single-left.html">Left Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="blog-single-full.html">No Sidebar</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
 
-													<li>
-														<a href="blog-single-video-right.html" class="sf-with-ul">Video Post</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="blog-single-video-right.html">Right Sidebar</a>
-															</li>
-															<li>
-																<a href="blog-single-video-left.html">Left Sidebar</a>
-															</li>
-															<li>
-																<a href="blog-single-video-full.html">No Sidebar</a>
-															</li>
-														</ul>
-													</li>
+													<!--<li>-->
+														<!--<a href="blog-single-video-right.html" class="sf-with-ul">Video Post</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="blog-single-video-right.html">Right Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="blog-single-video-left.html">Left Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="blog-single-video-full.html">No Sidebar</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
 
-												</ul>
-											</li>
-											<!-- eof blog -->
+												<!--</ul>-->
+											<!--</li>-->
+											<!--&lt;!&ndash; eof blog &ndash;&gt;-->
 
-											<li>
-												<a href="#" class="sf-with-ul">Features</a><span class="sf-menu-item-mobile-toggler"></span>
-												<div class="mega-menu" style="display: none; left: -263.344px; margin-top: 5px;">
-													<ul class="mega-menu-row">
-														<li class="mega-menu-col">
-															<a href="#">Headers</a>
-															<ul>
-																<li>
-																	<a href="header1.html">Header Type 1</a>
-																</li>
-																<li>
-																	<a href="header2.html">Header Type 2</a>
-																</li>
-																<li>
-																	<a href="header3.html">Header Type 3</a>
-																</li>
-																<li>
-																	<a href="header4.html">Header Type 4</a>
-																</li>
-																<li>
-																	<a href="header5.html">Header Type 5</a>
-																</li>
-																<li>
-																	<a href="header6.html">Header Type 6</a>
-																</li>
-															</ul>
-														</li>
-														<li class="mega-menu-col">
-															<a href="#">Side Menus</a>
-															<ul>
-																<li>
-																	<a href="header-side.html">Push Left</a>
-																</li>
-																<li>
-																	<a href="header-side-right.html">Push Right</a>
-																</li>
-																<li>
-																	<a href="header-side-slide.html">Slide Left</a>
-																</li>
-																<li>
-																	<a href="header-side-slide-right.html">Slide Right</a>
-																</li>
-																<li>
-																	<a href="header-side-sticked.html">Sticked Left</a>
-																</li>
-																<li>
-																	<a href="header-side-sticked-right.html">Sticked Right</a>
-																</li>
-															</ul>
-														</li>
-														<li class="mega-menu-col">
-															<a href="title1.html">Title Sections</a>
-															<ul>
-																<li>
-																	<a href="title1.html">Title section 1</a>
-																</li>
-																<li>
-																	<a href="title2.html">Title section 2</a>
-																</li>
-																<li>
-																	<a href="title3.html">Title section 3</a>
-																</li>
-																<li>
-																	<a href="title4.html">Title section 4</a>
-																</li>
-																<li>
-																	<a href="title5.html">Title section 5</a>
-																</li>
-																<li>
-																	<a href="title6.html">Title section 6</a>
-																</li>
-															</ul>
-														</li>
-														<li class="mega-menu-col">
-															<a href="footer1.html#footer">Footers</a>
-															<ul>
-																<li>
-																	<a href="footer1.html#footer">Footer Type 1</a>
-																</li>
-																<li>
-																	<a href="footer2.html#footer">Footer Type 2</a>
-																</li>
-																<li>
-																	<a href="footer3.html#footer">Footer Type 3</a>
-																</li>
-																<li>
-																	<a href="footer4.html#footer">Footer Type 4</a>
-																</li>
-																<li>
-																	<a href="footer5.html#footer">Footer Type 5</a>
-																</li>
-																<li>
-																	<a href="footer6.html#footer">Footer Type 6</a>
-																</li>
-															</ul>
-														</li>
-														<li class="mega-menu-col">
-															<a href="copyright1.html#copyright">Copyright</a>
+											<!--<li>-->
+												<!--<a href="#" class="sf-with-ul">Features</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<div class="mega-menu" style="display: none; left: -263.344px; margin-top: 5px;">-->
+													<!--<ul class="mega-menu-row">-->
+														<!--<li class="mega-menu-col">-->
+															<!--<a href="#">Headers</a>-->
+															<!--<ul>-->
+																<!--<li>-->
+																	<!--<a href="header1.html">Header Type 1</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header2.html">Header Type 2</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header3.html">Header Type 3</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header4.html">Header Type 4</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header5.html">Header Type 5</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header6.html">Header Type 6</a>-->
+																<!--</li>-->
+															<!--</ul>-->
+														<!--</li>-->
+														<!--<li class="mega-menu-col">-->
+															<!--<a href="#">Side Menus</a>-->
+															<!--<ul>-->
+																<!--<li>-->
+																	<!--<a href="header-side.html">Push Left</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header-side-right.html">Push Right</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header-side-slide.html">Slide Left</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header-side-slide-right.html">Slide Right</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header-side-sticked.html">Sticked Left</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="header-side-sticked-right.html">Sticked Right</a>-->
+																<!--</li>-->
+															<!--</ul>-->
+														<!--</li>-->
+														<!--<li class="mega-menu-col">-->
+															<!--<a href="title1.html">Title Sections</a>-->
+															<!--<ul>-->
+																<!--<li>-->
+																	<!--<a href="title1.html">Title section 1</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="title2.html">Title section 2</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="title3.html">Title section 3</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="title4.html">Title section 4</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="title5.html">Title section 5</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="title6.html">Title section 6</a>-->
+																<!--</li>-->
+															<!--</ul>-->
+														<!--</li>-->
+														<!--<li class="mega-menu-col">-->
+															<!--<a href="footer1.html#footer">Footers</a>-->
+															<!--<ul>-->
+																<!--<li>-->
+																	<!--<a href="footer1.html#footer">Footer Type 1</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="footer2.html#footer">Footer Type 2</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="footer3.html#footer">Footer Type 3</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="footer4.html#footer">Footer Type 4</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="footer5.html#footer">Footer Type 5</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="footer6.html#footer">Footer Type 6</a>-->
+																<!--</li>-->
+															<!--</ul>-->
+														<!--</li>-->
+														<!--<li class="mega-menu-col">-->
+															<!--<a href="copyright1.html#copyright">Copyright</a>-->
 
-															<ul>
-																<li>
-																	<a href="copyright1.html#copyright">Copyright 1</a>
-																</li>
-																<li>
-																	<a href="copyright2.html#copyright">Copyright 2</a>
-																</li>
-																<li>
-																	<a href="copyright3.html#copyright">Copyright 3</a>
-																</li>
-																<li>
-																	<a href="copyright4.html#copyright">Copyright 4</a>
-																</li>
-																<li>
-																	<a href="copyright5.html#copyright">Copyright 5</a>
-																</li>
-																<li>
-																	<a href="copyright6.html#copyright">Copyright 6</a>
-																</li>
-															</ul>
-														</li>
+															<!--<ul>-->
+																<!--<li>-->
+																	<!--<a href="copyright1.html#copyright">Copyright 1</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="copyright2.html#copyright">Copyright 2</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="copyright3.html#copyright">Copyright 3</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="copyright4.html#copyright">Copyright 4</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="copyright5.html#copyright">Copyright 5</a>-->
+																<!--</li>-->
+																<!--<li>-->
+																	<!--<a href="copyright6.html#copyright">Copyright 6</a>-->
+																<!--</li>-->
+															<!--</ul>-->
+														<!--</li>-->
 
-													</ul>
-												</div> <!-- eof mega menu -->
-											</li>
-											<!-- eof features -->
-
-
-											<li>
-												<a href="about.html" class="sf-with-ul">Pages</a><span class="sf-menu-item-mobile-toggler"></span>
-												<ul style="display: none; margin-top: 5px;">
+													<!--</ul>-->
+												<!--</div> &lt;!&ndash; eof mega menu &ndash;&gt;-->
+											<!--</li>-->
+											<!--&lt;!&ndash; eof features &ndash;&gt;-->
 
 
-													<li>
-														<a href="about.html">About</a>
-													</li>
-
-													<li>
-														<a href="services.html" class="sf-with-ul">Our Services</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="services.html">Services 1</a>
-															</li>
-															<li>
-																<a href="services2.html">Services 2</a>
-															</li>
-															<li>
-																<a href="services3.html">Services 3</a>
-															</li>
-															<li>
-																<a href="service-single.html">Single Service</a>
-															</li>
-														</ul>
-													</li>
-
-													<li>
-														<a href="services.html" class="sf-with-ul">Our Forecasts</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="forecast.html">Forecasts</a>
-															</li>
-															<li>
-																<a href="forecast-page.html">Single Forecast</a>
-															</li>
-														</ul>
-													</li>
-
-													<li>
-														<a href="pricing.html">Pricing</a>
-													</li>
-
-													<!-- shop -->
-													<li>
-														<a href="shop-right.html" class="sf-with-ul">Shop</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="shop-account-dashboard.html" class="sf-with-ul">Account</a><span class="sf-menu-item-mobile-toggler"></span>
-																<ul style="display: none; margin-top: 5px;">
-
-																	<li>
-																		<a href="shop-account-details.html">Account details</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-addresses.html">Addresses</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-address-edit.html">Edit Address</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-orders.html">Orders</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-order-single.html">Single Order</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-downloads.html">Downloads</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-password-reset.html">Password Reset</a>
-																	</li>
-																	<li>
-																		<a href="shop-account-login.html">Login/Logout</a>
-																	</li>
-
-																</ul>
-															</li>
-															<li>
-																<a href="shop-right.html">Right Sidebar</a>
-															</li>
-															<li>
-																<a href="shop-left.html">Left Sidebar</a>
-															</li>
-															<li>
-																<a href="shop-product-right.html">Product Right Sidebar</a>
-															</li>
-															<li>
-																<a href="shop-product-left.html">Product Left Sidebar</a>
-															</li>
-															<li>
-																<a href="shop-cart.html">Cart</a>
-															</li>
-															<li>
-																<a href="shop-checkout.html">Checkout</a>
-															</li>
-															<li>
-																<a href="shop-order-received.html">Order Received</a>
-															</li>
-
-														</ul>
-													</li>
-													<!-- eof shop -->
-
-													<!-- features -->
-													<li>
-														<a href="shortcodes_iconbox.html" class="sf-with-ul">Shortcodes</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="shortcodes_typography.html">Typography</a>
-															</li>
-															<li>
-																<a href="shortcodes_buttons.html">Buttons</a>
-															</li>
-															<li>
-																<a href="shortcodes_pricing.html">Pricing</a>
-															</li>
-															<li>
-																<a href="shortcodes_iconbox.html">Icon Boxes</a>
-															</li>
-															<li>
-																<a href="shortcodes_progress.html">Progress</a>
-															</li>
-															<li>
-																<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
-															</li>
-															<li>
-																<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
-															</li>
-															<li>
-																<a href="shortcodes_animation.html">Animation</a>
-															</li>
-															<li>
-																<a href="shortcodes_icons.html">Template Icons</a>
-															</li>
-															<li>
-																<a href="shortcodes_socialicons.html">Social Icons</a>
-															</li>
-														</ul>
-													</li>
-													<!-- eof shortcodes -->
-
-													<li>
-														<a href="shortcodes_widgets_default.html" class="sf-with-ul">Widgets</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="shortcodes_widgets_default.html">Default Widgets</a>
-															</li>
-															<li>
-																<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
-															</li>
-															<li>
-																<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
-															</li>
-														</ul>
-
-													</li>
+											<!--<li>-->
+												<!--<a href="about.html" class="sf-with-ul">Pages</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<ul style="display: none; margin-top: 5px;">-->
 
 
-													<!-- events -->
-													<li>
-														<a href="events-left.html" class="sf-with-ul">Events</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="events-left.html">Left Sidebar</a>
-															</li>
-															<li>
-																<a href="events-right.html">Right Sidebar</a>
-															</li>
-															<li>
-																<a href="events-full.html">Full Width</a>
-															</li>
-															<li>
-																<a href="event-single-left.html" class="sf-with-ul">Single Event</a><span class="sf-menu-item-mobile-toggler"></span>
-																<ul style="display: none; margin-top: 5px;">
-																	<li>
-																		<a href="event-single-left.html">Left Sidebar</a>
-																	</li>
-																	<li>
-																		<a href="event-single-right.html">Right Sidebar</a>
-																	</li>
-																	<li>
-																		<a href="event-single-full.html">Full Width</a>
-																	</li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-													<!-- eof events -->
+													<!--<li>-->
+														<!--<a href="about.html">About</a>-->
+													<!--</li>-->
 
-													<li>
-														<a href="team.html" class="sf-with-ul">Team</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="team.html">Team List</a>
-															</li>
-															<li>
-																<a href="team-single.html">Team Member</a>
-															</li>
-														</ul>
-													</li>
+													<!--<li>-->
+														<!--<a href="services.html" class="sf-with-ul">Our Services</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="services.html">Services 1</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="services2.html">Services 2</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="services3.html">Services 3</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="service-single.html">Single Service</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
 
+													<!--<li>-->
+														<!--<a href="services.html" class="sf-with-ul">Our Forecasts</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="forecast.html">Forecasts</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="forecast-page.html">Single Forecast</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
 
-													<li>
-														<a href="comingsoon.html">Comingsoon</a>
-													</li>
+													<!--<li>-->
+														<!--<a href="pricing.html">Pricing</a>-->
+													<!--</li>-->
 
-													<li>
-														<a href="faq.html" class="sf-with-ul">FAQ</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="faq.html">FAQ</a>
-															</li>
-															<li>
-																<a href="faq2.html">FAQ 2</a>
-															</li>
-														</ul>
-													</li>
-													<li>
-														<a href="404.html">404</a>
-													</li>
+													<!--&lt;!&ndash; shop &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="shop-right.html" class="sf-with-ul">Shop</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="shop-account-dashboard.html" class="sf-with-ul">Account</a><span class="sf-menu-item-mobile-toggler"></span>-->
+																<!--<ul style="display: none; margin-top: 5px;">-->
 
-												</ul>
-											</li>
-											<!-- eof pages -->
+																	<!--<li>-->
+																		<!--<a href="shop-account-details.html">Account details</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-addresses.html">Addresses</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-address-edit.html">Edit Address</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-orders.html">Orders</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-order-single.html">Single Order</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-downloads.html">Downloads</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-password-reset.html">Password Reset</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="shop-account-login.html">Login/Logout</a>-->
+																	<!--</li>-->
 
-											<!-- gallery -->
-											<li>
-												<a href="gallery-image.html" class="sf-with-ul">Gallery</a><span class="sf-menu-item-mobile-toggler"></span>
-												<ul style="display: none; margin-top: 5px;">
-													<!-- Gallery image only -->
-													<li>
-														<a href="gallery-image.html" class="sf-with-ul">Image Only</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="gallery-image-2-cols.html">2 columns</a>
-															</li>
-															<li>
-																<a href="gallery-image.html">3 columns</a>
-															</li>
-															<li>
-																<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
-															</li>
+																<!--</ul>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-right.html">Right Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-left.html">Left Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-product-right.html">Product Right Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-product-left.html">Product Left Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-cart.html">Cart</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-checkout.html">Checkout</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shop-order-received.html">Order Received</a>-->
+															<!--</li>-->
 
-														</ul>
-													</li>
-													<!-- eof Gallery image only -->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof shop &ndash;&gt;-->
 
-													<!-- Gallery with title -->
-													<li>
-														<a href="gallery-title.html" class="sf-with-ul">Image With Title</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="gallery-title-2-cols.html">2 columns</a>
-															</li>
-															<li>
-																<a href="gallery-title.html">3 column</a>
-															</li>
-															<li>
-																<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
-															</li>
-														</ul>
-													</li>
-													<!-- eof Gallery with title -->
+													<!--&lt;!&ndash; features &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="shortcodes_iconbox.html" class="sf-with-ul">Shortcodes</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="shortcodes_typography.html">Typography</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_buttons.html">Buttons</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_pricing.html">Pricing</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_iconbox.html">Icon Boxes</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_progress.html">Progress</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_animation.html">Animation</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_icons.html">Template Icons</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_socialicons.html">Social Icons</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof shortcodes &ndash;&gt;-->
 
-													<!-- Gallery with excerpt -->
-													<li>
-														<a href="gallery-excerpt.html" class="sf-with-ul">Image with Excerpt</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="gallery-excerpt-2-cols.html">2 columns</a>
-															</li>
-															<li>
-																<a href="gallery-excerpt.html">3 column</a>
-															</li>
-															<li>
-																<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
-															</li>
-														</ul>
-													</li>
-													<!-- eof Gallery with excerpt -->
+													<!--<li>-->
+														<!--<a href="shortcodes_widgets_default.html" class="sf-with-ul">Widgets</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="shortcodes_widgets_default.html">Default Widgets</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_widgets_shop.html">Shop Widgets</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="shortcodes_widgets_custom.html">Custom Widgets</a>-->
+															<!--</li>-->
+														<!--</ul>-->
 
-													<li>
-														<a href="gallery-tiled.html">Tiled Gallery</a>
-													</li>
-
-													<!-- Gallery item -->
-													<li>
-														<a href="gallery-single.html" class="sf-with-ul">Gallery Item</a><span class="sf-menu-item-mobile-toggler"></span>
-														<ul style="display: none; margin-top: 5px;">
-															<li>
-																<a href="gallery-single.html">Style 1</a>
-															</li>
-															<li>
-																<a href="gallery-single2.html">Style 2</a>
-															</li>
-														</ul>
-													</li>
-													<!-- eof Gallery item -->
-												</ul>
-											</li>
-											<!-- eof Gallery -->
-
-											<!-- contacts -->
-											<li>
-												<a href="contact.html" class="sf-with-ul">Contact</a><span class="sf-menu-item-mobile-toggler"></span>
-												<ul style="display: none; margin-top: 5px;">
-													<li>
-														<a href="contact.html">Contact 1</a>
-													</li>
-													<li>
-														<a href="contact2.html">Contact 2</a>
-													</li>
-													<li>
-														<a href="contact3.html">Contact 3</a>
-													</li>
-													<li>
-														<a href="contact4.html">Contact 4</a>
-													</li>
-												</ul>
-											</li>
-											<!-- eof contacts -->
-										</ul>
+													<!--</li>-->
 
 
-									</nav>
-									<!-- eof main nav -->
+													<!--&lt;!&ndash; events &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="events-left.html" class="sf-with-ul">Events</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="events-left.html">Left Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="events-right.html">Right Sidebar</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="events-full.html">Full Width</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="event-single-left.html" class="sf-with-ul">Single Event</a><span class="sf-menu-item-mobile-toggler"></span>-->
+																<!--<ul style="display: none; margin-top: 5px;">-->
+																	<!--<li>-->
+																		<!--<a href="event-single-left.html">Left Sidebar</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="event-single-right.html">Right Sidebar</a>-->
+																	<!--</li>-->
+																	<!--<li>-->
+																		<!--<a href="event-single-full.html">Full Width</a>-->
+																	<!--</li>-->
+																<!--</ul>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof events &ndash;&gt;-->
 
-								</div>
-							</div>
-							<div class="col-xl-3 col-9 order-1 order-xl-2 text-xl-right text-left">
-								<span class="social-icons">
+													<!--<li>-->
+														<!--<a href="team.html" class="sf-with-ul">Team</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="team.html">Team List</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="team-single.html">Team Member</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
 
-									<a href="https://www.facebook.com/" class="fa fa-facebook " title="facebook"></a>
-									<a href="https://twitter.com/" class="fa fa-twitter " title="twitter"></a>
-									<a href="https://www.linkedin.com/" class="fa fa-linkedin " title="linkedin"></a>
-									<a href="https://www.instagram.com/" class="fa fa-instagram " title="instagram"></a>
-									<a href="https://www.youtube.com/" class="fa fa-youtube-play " title="youtube"></a>
 
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- header toggler -->
-					<span class="toggle_menu"><span></span></span>
-				</header></div>
+													<!--<li>-->
+														<!--<a href="comingsoon.html">Comingsoon</a>-->
+													<!--</li>-->
+
+													<!--<li>-->
+														<!--<a href="faq.html" class="sf-with-ul">FAQ</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="faq.html">FAQ</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="faq2.html">FAQ 2</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="404.html">404</a>-->
+													<!--</li>-->
+
+												<!--</ul>-->
+											<!--</li>-->
+											<!--&lt;!&ndash; eof pages &ndash;&gt;-->
+
+											<!--&lt;!&ndash; gallery &ndash;&gt;-->
+											<!--<li>-->
+												<!--<a href="gallery-image.html" class="sf-with-ul">Gallery</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<ul style="display: none; margin-top: 5px;">-->
+													<!--&lt;!&ndash; Gallery image only &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="gallery-image.html" class="sf-with-ul">Image Only</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="gallery-image-2-cols.html">2 columns</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-image.html">3 columns</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>-->
+															<!--</li>-->
+
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof Gallery image only &ndash;&gt;-->
+
+													<!--&lt;!&ndash; Gallery with title &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="gallery-title.html" class="sf-with-ul">Image With Title</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="gallery-title-2-cols.html">2 columns</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-title.html">3 column</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof Gallery with title &ndash;&gt;-->
+
+													<!--&lt;!&ndash; Gallery with excerpt &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="gallery-excerpt.html" class="sf-with-ul">Image with Excerpt</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="gallery-excerpt-2-cols.html">2 columns</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-excerpt.html">3 column</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof Gallery with excerpt &ndash;&gt;-->
+
+													<!--<li>-->
+														<!--<a href="gallery-tiled.html">Tiled Gallery</a>-->
+													<!--</li>-->
+
+													<!--&lt;!&ndash; Gallery item &ndash;&gt;-->
+													<!--<li>-->
+														<!--<a href="gallery-single.html" class="sf-with-ul">Gallery Item</a><span class="sf-menu-item-mobile-toggler"></span>-->
+														<!--<ul style="display: none; margin-top: 5px;">-->
+															<!--<li>-->
+																<!--<a href="gallery-single.html">Style 1</a>-->
+															<!--</li>-->
+															<!--<li>-->
+																<!--<a href="gallery-single2.html">Style 2</a>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</li>-->
+													<!--&lt;!&ndash; eof Gallery item &ndash;&gt;-->
+												<!--</ul>-->
+											<!--</li>-->
+											<!--&lt;!&ndash; eof Gallery &ndash;&gt;-->
+
+											<!--&lt;!&ndash; contacts &ndash;&gt;-->
+											<!--<li>-->
+												<!--<a href="contact.html" class="sf-with-ul">Contact</a><span class="sf-menu-item-mobile-toggler"></span>-->
+												<!--<ul style="display: none; margin-top: 5px;">-->
+													<!--<li>-->
+														<!--<a href="contact.html">Contact 1</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="contact2.html">Contact 2</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="contact3.html">Contact 3</a>-->
+													<!--</li>-->
+													<!--<li>-->
+														<!--<a href="contact4.html">Contact 4</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</li>-->
+											<!--&lt;!&ndash; eof contacts &ndash;&gt;-->
+										<!--</ul>-->
+
+
+									<!--</nav>-->
+									<!--&lt;!&ndash; eof main nav &ndash;&gt;-->
+
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-xl-3 col-9 order-1 order-xl-2 text-xl-right text-left">-->
+								<!--<span class="social-icons">-->
+
+									<!--<a href="https://www.facebook.com/" class="fa fa-facebook " title="facebook"></a>-->
+									<!--<a href="https://twitter.com/" class="fa fa-twitter " title="twitter"></a>-->
+									<!--<a href="https://www.linkedin.com/" class="fa fa-linkedin " title="linkedin"></a>-->
+									<!--<a href="https://www.instagram.com/" class="fa fa-instagram " title="instagram"></a>-->
+									<!--<a href="https://www.youtube.com/" class="fa fa-youtube-play " title="youtube"></a>-->
+
+								<!--</span>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--&lt;!&ndash; header toggler &ndash;&gt;-->
+					<!--<span class="toggle_menu"><span></span></span>-->
+				<!--</header></div>-->
 
 			</div>
 </template>
