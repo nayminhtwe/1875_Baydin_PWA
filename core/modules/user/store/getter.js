@@ -1,20 +1,10 @@
 const getters = {
-  isLoggedIn (state) {
-    return state.current !== null
-  },
-  isLocalDataLoaded: state => state.local_data_loaded,
-  getUserToken (state) {
-    return state.token
-  },
-  getOrdersHistory (state) {
-    return state.orders_history ? state.orders_history.items : []
-  },
-  getToken (state) {
-    return state.token
-  },
-  getUserEmail (state, getters) {
-    return getters.isLoggedIn ? state.current.email : null
-  }
+  isAuthenticated: state => !!state.token,
+  getDoctorToken: state => state.token,
+  getDoctorProfile: state => state.current,
+  getResponse: state => state.response,
+  getOpenID: state => state.openID,
+  status: state => state.status
 }
 
 export default getters

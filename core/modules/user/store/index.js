@@ -5,13 +5,14 @@ import mutations from './mutation'
 const userStore = {
   namespaced: true,
   state: {
-    token: '',
+    response: {},
+    openID: '',
+    token: localStorage.getItem('access_token') || '',
     refreshToken: '',
     current: null,
-    current_storecode: '',
-    session_started: new Date(),
-    orders_history: null,
-    local_data_loaded: false
+    status: '',
+    message: '',
+    errors: []
   },
   getters,
   actions,

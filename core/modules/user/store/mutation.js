@@ -1,36 +1,50 @@
 import * as types from './mutation-types'
-import { Logger } from '../../../lib/logger'
-
 const mutations = {
-  [types.USER_TOKEN_CHANGED] (state, payload) {
-    state.token = payload.newToken
-    if (payload.meta && payload.meta.refreshToken) {
-      state.refreshToken = payload.meta.refreshToken // store the refresh token
-      Logger.log('Refresh token is set to' + state.refreshToken, 'user')()
-    }
+  [types.AUTH_REQUEST] (state) {
+    state.status = 'loading'
   },
-  [types.USER_START_SESSION] (state) {
-    state.session_started = new Date()
+
+  [types.AUTH_SUCCESS] (state, payload) {
+    state.status = 'success'
+    state.token = payload.access_token
+    state.current = payload.doctor
+    state.message = payload.message
   },
-  [types.USER_GROUP_TOKEN_CHANGED] (state, token) {
-    state.groupToken = token
+
+  [types.AUTH_ERROR] (state, payload) {
+    state.status = 'error'
+    state.message = payload.message
+    state.errors = payload.errors
   },
-  [types.USER_GROUP_CHANGED] (state, groupId) {
-    state.groupId = groupId
+
+  [types.CUST_REQUEST] (state) {
+    state.status = 'loading'
   },
-  [types.USER_INFO_LOADED] (state, currentUser) {
-    state.current = currentUser
+
+  [types.CUST_SUCCESS] (state, payload) {
+    state.response = payload.response
+    state.openID = payload.openID
   },
-  [types.USER_ORDERS_HISTORY_LOADED] (state, ordersHistory) {
-    state.orders_history = ordersHistory
+
+  [types.CUST_ERROR] (state, payload) {
+    state.status = 'error'
+    state.response = payload.response
   },
-  [types.USER_END_SESSION] (state) {
+
+  [types.PROFILE_REQUEST] (state) {
+    state.status = 'loading'
+  },
+  [types.PROFILE_SUCCESS] (state, payload) {
+    state.status = 'success'
+    state.current = payload
+  },
+
+  [types.PROFILE_ERROR] (state) {
+    state.status = 'error'
+  },
+  [types.LOGOUT] (state) {
     state.token = ''
-    state.current = null
-    state.session_started = null
-  },
-  [types.USER_LOCAL_DATA_LOADED] (state, readed = false) {
-    state.local_data_loaded = readed
+    state.status = 'logout'
   }
 }
 

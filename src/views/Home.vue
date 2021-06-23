@@ -1,5 +1,6 @@
 <template>
   <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
+    {{ getResponse}}
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -167,11 +168,17 @@ export default {
       getCategories: 'categoryStore/getCategories',
       specialCategories: 'categoryStore/getSpecialCategories',
       normalCategories: 'categoryStore/getNormalCategories',
+      isAuthenticated: 'userStore/isAuthenticated',
+      getResponse: 'userStore/getResponse',
     }),
   },
   created () {
     if (this.getCategories.length === 0) {
       this.$store.dispatch('categoryStore/allCategories')
+    }
+
+    if (!this.isAuthenticated) {
+      this.$store.dispatch('userStore/login', this.$route.query.kbzpay_token)
     }
   }
 };
