@@ -176,7 +176,7 @@ export default {
       specialCategories: 'categoryStore/getSpecialCategories',
       normalCategories: 'categoryStore/getNormalCategories',
       isAuthenticated: 'userStore/isAuthenticated',
-      getResponse: 'userStore/getResponse',
+      getResponse: 'userStore/getResponse'
     }),
   },
   created () {

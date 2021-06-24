@@ -7,7 +7,6 @@ const mutations = {
   [types.AUTH_SUCCESS] (state, payload) {
     state.status = 'success'
     state.token = payload.access_token
-    state.current = payload.doctor
     state.message = payload.message
   },
 

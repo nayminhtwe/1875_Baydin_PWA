@@ -8,8 +8,6 @@ const userStore = {
     response: {},
     openID: '',
     token: localStorage.getItem('access_token') || '',
-    refreshToken: '',
-    current: null,
     status: '',
     message: '',
     errors: []

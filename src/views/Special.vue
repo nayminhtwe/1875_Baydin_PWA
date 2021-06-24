@@ -13,8 +13,6 @@
                 <div class="woocommerce-MyAccount-content">
                   <form
                     id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/lovebaydin"
-                    method="post"
                     role="form"
                     style="display: block;"
                     v-if="getCurrentCategory.id === 275"
@@ -190,7 +188,7 @@
                     </label>
                     <p>
                       <input
-                        @click="precreate()"
+                        @click.prevent="precreate()"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -200,8 +198,6 @@
                   </form>
                   <form
                     id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/horo/child/naming/create"
-                    method="post"
                     role="form"
                     style="display: block;"
                     v-if="getCurrentCategory.id === 11"
@@ -325,7 +321,7 @@
                     </label>
                     <p>
                       <input
-                        @click="precreate()"
+                        @click.prevent="precreate()"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -334,8 +330,6 @@
                     </p>
                   </form>
                   <form
-                    action="https://chatbothoro.blueplanet.com.mm/horo/business/naming/create"
-                    method="post"
                     id="business-form"
                     role="form"
                     v-if="getCurrentCategory.id === 267"
@@ -410,7 +404,7 @@
                     </label>
                     <p>
                       <input
-                        @click="precreate()"
+                        @click.prevent="precreate()"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -420,8 +414,6 @@
                   </form>
                   <form
                     id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/horo/one/year/create"
-                    method="post"
                     role="form"
                     style="display: block;"
                     v-if="getCurrentCategory.id === 10"
@@ -587,7 +579,8 @@ export default {
   name: `Special`,
   computed: {
     ...mapGetters({
-      getCurrentCategory: "categoryStore/getCurrentCategory"
+      getCurrentCategory: "categoryStore/getCurrentCategory",
+      getUserToken: 'userStore/getUserToken',
     })
   },
   created () {
@@ -598,11 +591,13 @@ export default {
   },
   methods: {
     precreate () {
+      HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
       HTTP.post("subscription/precreate", {
         'category_id': this.getCurrentCategory.id,
         'amount': this.getCurrentCategory.price
       }).then((response) => {
-        console.log(response)
+        const res = response.data
+        this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
       });
     }
   }
