@@ -13,46 +13,116 @@
                 <div class="woocommerce-MyAccount-content">
                   <form
                     id="child-form"
-                    action="https://chatbothoro.blueplanet.com.mm/baydin_sayar/baydin"
-                    method="post"
                     role="form"
                     style="display: block;"
                   >
-                    
+
                     <p class="mm-font __mm">အောက်ပါပေးထားသော Form အချက်အလက်များကို ဖြည့်ပေးပါ</p>
                     <label class="form-group">
                       <span class="mm-font __mm">အမည်</span>
-                      <input type="text" class="form-control" name="name" required />
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        v-model="phone.name"
+                        required
+                      />
                     </label>
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးသက္ကရာဇ်</span>
-                      <input type="text" class="form-control" name="birth_date" required />
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="birth_date"
+                        v-model="phone.birth_date"
+                        required
+                      />
                     </label>
                     <label class="form-group">
                       <span class="mm-font __mm">နေ့နံ</span>
-                      <input type="text" class="form-control" name="nyih_nan" required />
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="nyih_nan"
+                        v-model="phone.nyih_nan"
+                        required
+                      />
                     </label>
-                    <input type="radio" name="marital_status" value="Yes" required />
-                    <span for class="mm-font __mm">အိမ်ထောင်ရှိ</span>
-                    <input type="radio" name="marital_status" value="No" required />
-                    <span for class="mm-font __mm">အိမ်ထောင်မရှိ</span>
+                    <input
+                      type="radio"
+                      name="marital_status"
+                      v-model="phone.marital_status"
+                      value="Yes"
+                      required
+                    />
+                    <span
+                      for
+                      class="mm-font __mm"
+                    >အိမ်ထောင်ရှိ</span>
+                    <input
+                      type="radio"
+                      name="marital_status"
+                      v-model="phone.marital_status"
+                      value="No"
+                      required
+                    />
+                    <span
+                      for
+                      class="mm-font __mm"
+                    >အိမ်ထောင်မရှိ</span>
                     <br />
                     <br />
                     <label class="form-group">
-                      <span for class="mm-font __mm">နေထိုင်သည့်မြို့</span>
-                      <input type="text" class="form-control" name="address" required />
+                      <span
+                        for
+                        class="mm-font __mm"
+                      >နေထိုင်သည့်မြို့</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        v-model="phone.address"
+                        required
+                      />
                     </label>
-                    <input type="radio" name="gender" value="ကျား" required />
-                    <span for class="mm-font __mm">ကျား</span>
-                    <input type="radio" name="gender" value="မ" required />
-                    <span for class="mm-font __mm">မ</span>
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="male"
+                      v-model="phone.gender"
+                      required
+                    />
+                    <span
+                      for
+                      class="mm-font __mm"
+                    >ကျား</span>
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="female"
+                      v-model="phone.gender"
+                      required
+                    />
+                    <span
+                      for
+                      class="mm-font __mm"
+                    >မ</span>
                     <br />
                     <br />
                     <br />
                     <br />
                     <label class="form-group">
-                      <span for class="mm-font __mm">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
-                      <input type="text" class="form-control" name="phone_number" required />
+                      <span
+                        for
+                        class="mm-font __mm"
+                      >ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="phone_number"
+                        v-model="phone.phone_number"
+                        required
+                      />
                     </label>
 
                     <br />
@@ -67,16 +137,25 @@
                         class="mm-font __mm"
                         style="color: white"
                       >တနင်္လာ မှ စနေထိ၊မနက် ၉နာရီ မှ ညနေ ၅နာရီအတွင်းသာ</h5>
-                      <input type="text" class="form-control mm-font" name="call_time" />
+                      <input
+                        type="text"
+                        class="form-control mm-font"
+                        name="call_time"
+                        v-model="phone.call_time"
+                      />
                     </label>
 
                     <br />
                     <br />
-                    <p class="mm-font" id="call_service"></p>
+                    <p
+                      class="mm-font"
+                      id="call_service"
+                    ></p>
                     <p class="mm-font __mm">မေးမြန်းလိုသည့်အကြာင်းအရာကိုရေးပါ။</p>
                     <label class="form-group">
                       <textarea
                         name="about"
+                        v-model="phone.about"
                         class="mm-font test"
                         rows="10"
                         cols="35"
@@ -88,20 +167,52 @@
 
                     <label class="form-group">
                       <span class="mm-font __mm">ဗေဒင်ဆရာ</span>
-                      <select name="baydin_sayar" class="mm-font __mm" required>
-                        <option value=" " class=" mm-font __mm">ဗေဒင်ဆရာ ရွေးချယ်ပါ...</option>
-                        <option value="ဆရာမ သန့်ထားဆု" class="mm-font __mm">ဆရာမ သန့်ထားဆု</option>
+                      <select
+                        name="baydin_sayar"
+                        v-model="phone.baydin_sayar"
+                        class="mm-font __mm"
+                        required
+                      >
+                        <option
+                          value=" "
+                          class=" mm-font __mm"
+                        >ဗေဒင်ဆရာ ရွေးချယ်ပါ...</option>
+                        <option
+                          value="ဆရာမ သန့်ထားဆု"
+                          class="mm-font __mm"
+                        >ဆရာမ သန့်ထားဆု</option>
                         <option
                           value="ဆရာ မင်းသုကျော်ခေါင်"
                           class="mm-font __mm"
                         >ဆရာ မင်းသုကျော်ခေါင်</option>
-                        <option value="ဆရာ ကျော်ဇောဟန်" class="__mm">ဆရာ ကျော်ဇောဟန်</option>
-                        <option value="ဆရာ မင်းသိမ်းခိုင်" class="__mm">ဆရာ မင်းသိမ်းခိုင်</option>
-                        <option value="ဆရာမ စောလှနွယ်နီ" class="__mm">ဆရာမ စောလှနွယ်နီ</option>
-                        <option value="ဆရာ မိုးမင်းသုခ" class="__mm">ဆရာ မိုးမင်းသုခ</option>
-                        <option value="ဆရာမ စောယုထွေး" class="__mm">ဆရာမ စောယုထွေး</option>
-                        <option value="ဆရာမ ယွန်းပိုးအိ" class="__mm">ဆရာမ ယွန်းပိုးအိ</option>
-                        <option value="ဆရာမ ဝင့်ယမုံဦး" class="__mm">ဆရာမ ဝင့်ယမုံဦး</option>
+                        <option
+                          value="ဆရာ ကျော်ဇောဟန်"
+                          class="__mm"
+                        >ဆရာ ကျော်ဇောဟန်</option>
+                        <option
+                          value="ဆရာ မင်းသိမ်းခိုင်"
+                          class="__mm"
+                        >ဆရာ မင်းသိမ်းခိုင်</option>
+                        <option
+                          value="ဆရာမ စောလှနွယ်နီ"
+                          class="__mm"
+                        >ဆရာမ စောလှနွယ်နီ</option>
+                        <option
+                          value="ဆရာ မိုးမင်းသုခ"
+                          class="__mm"
+                        >ဆရာ မိုးမင်းသုခ</option>
+                        <option
+                          value="ဆရာမ စောယုထွေး"
+                          class="__mm"
+                        >ဆရာမ စောယုထွေး</option>
+                        <option
+                          value="ဆရာမ ယွန်းပိုးအိ"
+                          class="__mm"
+                        >ဆရာမ ယွန်းပိုးအိ</option>
+                        <option
+                          value="ဆရာမ ဝင့်ယမုံဦး"
+                          class="__mm"
+                        >ဆရာမ ဝင့်ယမုံဦး</option>
                       </select>
                     </label>
 
@@ -189,6 +300,8 @@
                     <p>
                       <input
                         type="submit"
+                        @click.prevent="precreate()"
+                        :disabled="disabled"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
                         value="အတည်ပြုမည်"
@@ -207,8 +320,66 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { Horo, HTTP } from "@core/lib/http-common";
+import { getFormData, checkFormModel } from "@core/lib/form-data"
 export default {
-  name: `Special`
+  name: `Special`,
+  data () {
+    return {
+      disabled: false,
+      phone: {
+        name: '',
+        birth_date: '',
+        nyih_nan: '',
+        address: '',
+        phone_number: '',
+        order_id: '0',
+        gender: '',
+        call_time: '',
+        user_id: '0',
+        about: '',
+        baydin_sayar: '',
+        marital_status: '',
+        price: '4500',
+      }
+    }
+  },
+  computed: {
+    ...mapGetters({
+      getUserToken: 'userStore/getUserToken',
+    })
+  },
+  methods: {
+    precreate () {
+      if (checkFormModel(this.phone)) {
+        this.disabled = true
+        HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
+        HTTP.post("subscription/precreate", {
+          'category_id': 0,
+          'amount': this.phone.price
+        }).then((response) => {
+          const res = response.data
+          this.phone.order_id = res.order_id
+          this.phone.user_id = res.user_id
+          let formdata = getFormData(this.phone)
+          Horo.post("1875/callService/horoscope", formdata).then((response) => {
+            console.log(response)
+            this.res_status = response.data.status
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+          })
+        }).catch(error => {
+          console.log(error)
+          this.message = 'Something went wrong'
+        });
+      }
+      else {
+        alert("Plz fill all required fields")
+      }
+
+
+    }
+  }
 };
 </script>
 
