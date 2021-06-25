@@ -35,6 +35,7 @@
                         type="text"
                         class="form-control"
                         name="g_name"
+                        v-model="love.g_name"
                         required
                       />
                     </label>
@@ -42,6 +43,7 @@
                       <span class="mm-font __mm">မွေးနေ့</span>
                       <select
                         name="g_birth_day"
+                        v-model="love.g_birth_day"
                         class="mm-font __mm"
                         required
                       >
@@ -81,6 +83,7 @@
                         type="text"
                         class="form-control"
                         name="g_birth_date"
+                        v-model="love.g_birth_date"
                         required
                       />
                     </label>
@@ -93,6 +96,7 @@
                         type="text"
                         class="form-control"
                         name="g_address"
+                        v-model="love.g_address"
                         required
                       />
                     </label>
@@ -112,6 +116,7 @@
                         type="text"
                         class="form-control"
                         name="b_name"
+                        v-model="love.b_name"
                         required
                       />
                     </label>
@@ -119,6 +124,7 @@
                       <span class="mm-font __mm">မွေးနေ့</span>
                       <select
                         name="b_birth_day"
+                        v-model="love.b_birth_day"
                         class="mm-font __mm"
                         required
                       >
@@ -158,6 +164,7 @@
                         type="text"
                         class="form-control"
                         name="b_birth_date"
+                        v-model="love.b_birth_date"
                         required
                       />
                     </label>
@@ -170,6 +177,7 @@
                         type="text"
                         class="form-control"
                         name="b_address"
+                        v-model="love.b_address"
                         required
                       />
                     </label>
@@ -183,12 +191,14 @@
                         type="text"
                         class="form-control"
                         name="phone_number"
+                        v-model="love.phone_number"
                         required
                       />
                     </label>
                     <p>
                       <input
                         @click.prevent="precreate()"
+                        :disabled="disabled"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -216,6 +226,7 @@
                         type="text"
                         class="form-control"
                         name="birth_date"
+                        v-model="child.birth_date"
                         required
                       />
                     </label>
@@ -225,6 +236,7 @@
                         type="text"
                         class="form-control"
                         name="birth_time"
+                        v-model="child.birth_time"
                         required
                       />
                     </label>
@@ -234,6 +246,7 @@
                         type="text"
                         class="form-control"
                         name="father_name"
+                        v-model="child.father_name"
                         required
                       />
                     </label>
@@ -243,6 +256,7 @@
                         type="text"
                         class="form-control"
                         name="mother_name"
+                        v-model="child.mother_name"
                         required
                       />
                     </label>
@@ -255,6 +269,7 @@
                         type="text"
                         class="form-control"
                         name="birth_place"
+                        v-model="child.birth_place"
                         required
                       />
                     </label>
@@ -268,6 +283,7 @@
                         type="text"
                         class="form-control"
                         name="nyih_nan"
+                        v-model="child.nyih_nan"
                         required
                       />
                     </label>
@@ -275,6 +291,7 @@
                     <input
                       type="radio"
                       name="gender"
+                      v-model="child.gender"
                       value="0"
                       required
                     />
@@ -285,6 +302,7 @@
                     <input
                       type="radio"
                       name="gender"
+                      v-model="child.gender"
                       value="1"
                       required
                     />
@@ -304,6 +322,7 @@
                         type="text"
                         class="form-control"
                         name="phone_number"
+                        v-model="child.phone_number"
                         required
                       />
                     </label>
@@ -316,12 +335,14 @@
                         type="text"
                         class="form-control"
                         name="address"
+                        v-model="child.address"
                         required
                       />
                     </label>
                     <p>
                       <input
                         @click.prevent="precreate()"
+                        :disabled="disabled"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -348,6 +369,7 @@
                         type="text"
                         class="form-control"
                         name="owner_name"
+                        v-model="business.owner_name"
                         required
                       />
                     </label>
@@ -357,6 +379,7 @@
                         type="text"
                         class="form-control"
                         name="birth_date"
+                        v-model="business.birth_date"
                         required
                       />
                     </label>
@@ -366,6 +389,7 @@
                         type="text"
                         class="form-control"
                         name="business_type"
+                        v-model="business.business_type"
                         required
                       />
                     </label>
@@ -375,6 +399,7 @@
                         type="text"
                         class="form-control"
                         name="address"
+                        v-model="business.address"
                         required
                       />
                     </label>
@@ -387,6 +412,7 @@
                         type="text"
                         class="form-control"
                         name="phone_number"
+                        v-model="business.phone_number"
                         required
                       />
                     </label>
@@ -399,12 +425,14 @@
                         type="text"
                         class="form-control"
                         name="nyih_tha"
+                        v-model="business.nyih_tha"
                         required
                       />
                     </label>
                     <p>
                       <input
                         @click.prevent="precreate()"
+                        :disabled="disabled"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -433,6 +461,7 @@
                         type="text"
                         class="form-control"
                         name="birth_date"
+                        v-model="oneyear.birth_date"
                         required
                       />
                     </label>
@@ -442,6 +471,7 @@
                         type="text"
                         class="form-control"
                         name="birth_time"
+                        v-model="oneyear.birth_time"
                         required
                       />
                     </label>
@@ -451,6 +481,7 @@
                         type="text"
                         class="form-control"
                         name="name"
+                        v-model="oneyear.name"
                         required
                       />
                     </label>
@@ -464,6 +495,7 @@
                         type="text"
                         class="form-control"
                         name="birth_place"
+                        v-model="oneyear.birth_place"
                         required
                       />
                     </label>
@@ -476,6 +508,7 @@
                         type="text"
                         class="form-control"
                         name="career"
+                        v-model="oneyear.career"
                         required
                       />
                     </label>
@@ -488,6 +521,7 @@
                         type="text"
                         class="form-control"
                         name="address"
+                        v-model="oneyear.address"
                         required
                       />
                     </label>
@@ -495,6 +529,7 @@
                       type="radio"
                       name="marital_status"
                       value="1"
+                      v-model="oneyear.marital_status"
                       required
                     />
                     <span
@@ -505,6 +540,7 @@
                       type="radio"
                       name="marital_status"
                       value="0"
+                      v-model="oneyear.marital_status"
                       required
                     />
                     <span
@@ -523,6 +559,7 @@
                         type="text"
                         class="form-control"
                         name="nyih_nan"
+                        v-model="oneyear.nyih_nan"
                         required
                       />
                     </label>
@@ -535,6 +572,7 @@
                         type="text"
                         class="form-control"
                         name="about"
+                        v-model="oneyear.about"
                         required
                       />
                     </label>
@@ -547,12 +585,14 @@
                         type="text"
                         class="form-control"
                         name="phone_number"
+                        v-model="oneyear.phone_number"
                         required
                       />
                     </label>
                     <p>
                       <input
                         @click.prevent="precreate()"
+                        :disabled="disabled"
                         type="submit"
                         class="woocommerce-Button button mm-font __mm"
                         name="save_account_details"
@@ -573,10 +613,72 @@
 
 <script>
 import { mapGetters } from "vuex";
-import { HTTP } from "@core/lib/http-common";
+import { Horo, HTTP } from "@core/lib/http-common";
+import { getFormData, checkFormModel } from "@core/lib/form-data"
 
 export default {
   name: `Special`,
+  data () {
+    return {
+      disabled: false,
+      res_status: 0,
+      message: '',
+      love: {
+        g_name: '',
+        g_birth_day: '',
+        g_birth_date: '',
+        g_address: '',
+        b_name: '',
+        b_birth_day: '',
+        b_birth_date: '',
+        b_address: '',
+        phone_number: '',
+        order_id: '0',
+        user_id: '0',
+        price: '0'
+      },
+      child: {
+        birth_date: '',
+        birth_time: '',
+        father_name: '',
+        mother_name: '',
+        birth_place: '',
+        nyih_nan: '',
+        order_id: '0',
+        address: '',
+        phone_number: '',
+        gender: '',
+        user_id: '0',
+        price: '0'
+      },
+      oneyear: {
+        birth_date: '',
+        birth_time: '',
+        birth_place: '',
+        nyih_nan: '',
+        career: '',
+        marital_status: '',
+        phone_number: '',
+        order_id: '0',
+        user_id: '0',
+        about: '',
+        address: '',
+        price: '0',
+      },
+      business: {
+        owner_name: '',
+        user_id: '0',
+        birth_date: '',
+        business_type: '',
+        phone_number: '',
+        address: '',
+        nyih_tha: '',
+        order_id: '0',
+        price: '0',
+
+      }
+    }
+  },
   computed: {
     ...mapGetters({
       getCurrentCategory: "categoryStore/getCurrentCategory",
@@ -591,14 +693,98 @@ export default {
   },
   methods: {
     precreate () {
-      HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
-      HTTP.post("subscription/precreate", {
-        'category_id': this.getCurrentCategory.id,
-        'amount': this.getCurrentCategory.price
-      }).then((response) => {
-        const res = response.data
-        this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
-      });
+      if (this.getCurrentCategory.id === 275 && checkFormModel(this.love)) {
+        this.disabled = true
+        HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
+        HTTP.post("subscription/precreate", {
+          'category_id': this.getCurrentCategory.id,
+          'amount': this.getCurrentCategory.price
+        }).then((response) => {
+          const res = response.data
+          this.love.order_id = res.order_id
+          this.love.user_id = res.user_id
+          this.love.price = this.getCurrentCategory.price
+          let formdata = getFormData(this.love)
+          Horo.post("1875/love/horoscope", formdata).then((response) => {
+            console.log(response)
+            this.res_status = response.data.status
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+          })
+        }).catch(error => {
+          console.log(error)
+          this.message = 'Something went wrong'
+        });
+      }
+      else if (this.getCurrentCategory.id === 11 && checkFormModel(this.child)) {
+        this.disabled = true
+        HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
+        HTTP.post("subscription/precreate", {
+          'category_id': this.getCurrentCategory.id,
+          'amount': this.getCurrentCategory.price
+        }).then((response) => {
+          const res = response.data
+          this.child.order_id = res.order_id
+          this.child.user_id = res.user_id
+          this.child.price = this.getCurrentCategory.price
+          let formdata = getFormData(this.child)
+          Horo.post("1875/childNaming/horoscope", formdata).then((response) => {
+            console.log(response)
+            this.res_status = response.data.status
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+          })
+        }).catch(error => {
+          console.log(error)
+          this.message = 'Something went wrong'
+        });
+      }
+      else if (this.getCurrentCategory.id === 10 && checkFormModel(this.oneyear)) {
+        this.disabled = true
+        HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
+        HTTP.post("subscription/precreate", {
+          'category_id': this.getCurrentCategory.id,
+          'amount': this.getCurrentCategory.price
+        }).then((response) => {
+          const res = response.data
+          this.oneyear.order_id = res.order_id
+          this.oneyear.user_id = res.user_id
+          this.oneyear.price = this.getCurrentCategory.price
+          let formdata = getFormData(this.oneyear)
+          Horo.post("1875/oneyear/horoscope", formdata).then((response) => {
+            console.log(response)
+            this.res_status = response.data.status
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+          })
+        }).catch(error => {
+          console.log(error)
+          this.message = 'Something went wrong'
+        });
+      }
+      else if (this.getCurrentCategory.id === 267 && checkFormModel(this.business)) {
+        this.disabled = true
+        HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
+        HTTP.post("subscription/precreate", {
+          'category_id': this.getCurrentCategory.id,
+          'amount': this.getCurrentCategory.price
+        }).then((response) => {
+          const res = response.data
+          this.business.order_id = res.order_id
+          this.business.user_id = res.user_id
+          this.business.price = this.getCurrentCategory.price
+          let formdata = getFormData(this.business)
+          Horo.post("1875/businessNaming/horoscope", formdata).then((response) => {
+            console.log(response)
+            this.res_status = response.data.status
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+          })
+        }).catch(error => {
+          console.log(error)
+          this.message = 'Something went wrong'
+        });
+      } else {
+        alert("Plz fill all required fields")
+      }
+
+
     }
   }
 };

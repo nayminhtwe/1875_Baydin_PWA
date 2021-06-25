@@ -7,3 +7,11 @@ export const HTTP = axios.create({
     Authorization: ''
   }
 })
+
+export const Horo = axios.create({
+  baseURL: `https://chatbothoro.blueplanet.com.mm/api/v1//`,
+  auth: {
+    username: 'admin2021@horo.com',
+    password: 'blue0cean@2021'
+  }
+})
