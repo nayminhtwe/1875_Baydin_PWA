@@ -23303,3 +23303,7 @@ img.absolute_image {
 .horoscope-image:hover {
 	animation-play-state: paused;
 }
+
+.woocommerce select{
+	background: #3e1e68 !important;
+}
