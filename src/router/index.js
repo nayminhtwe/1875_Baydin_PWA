@@ -9,6 +9,7 @@ const Content = () => import(/* webpackChunkName: "about" */ '../views/Content.v
 const Special = () => import(/* webpackChunkName: "about" */ '../views/Special.vue')
 const Direct = () => import(/* webpackChunkName: "about" */ '../views/Direct.vue')
 const Phone = () => import(/* webpackChunkName: "about" */ '../views/Phone.vue')
+const Order = () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
 
 const routes = [
   {
@@ -43,7 +44,12 @@ const routes = [
     path: '/content/:categoryId',
     name: 'content',
     component: Content
-  }
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: Order
+  },
 ]
 
 const router = new VueRouter({
