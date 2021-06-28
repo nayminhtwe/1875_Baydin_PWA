@@ -364,14 +364,13 @@ export default {
           this.phone.user_id = res.user_id
           let formdata = getFormData(this.phone)
           Horo.post("1875/callService/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
               () => {
-                alert('payment success')
+                this.$swal('Success', 'Your Purchase Success', 'success');
               },
               () => {
-                alert('payment failed')
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
               })
           })
         }).catch(error => {

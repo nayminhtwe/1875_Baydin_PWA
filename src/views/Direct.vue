@@ -319,9 +319,14 @@ export default {
           this.direct.user_id = res.user_id
           let formdata = getFormData(this.direct)
           Horo.post("1875/direct/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                this.$swal('Success', 'Your Purchase Success', 'success');
+              },
+              () => {
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
+              })
           })
         }).catch(error => {
           console.log(error)
