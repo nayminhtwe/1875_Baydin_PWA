@@ -19,10 +19,6 @@
                 v-for="content in getContents"
                 :key="content.id"
               >{{ JSON.parse(content.content)[0] }}</p>
-              <button
-                name="pay"
-                @click="startPay()"
-              >Pay Now</button>
             </div>
           </div>
           <div class="share_buttons social_part">

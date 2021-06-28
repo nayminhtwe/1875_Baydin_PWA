@@ -706,9 +706,16 @@ export default {
           this.love.price = this.getCurrentCategory.price
           let formdata = getFormData(this.love)
           Horo.post("1875/love/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                this.$swal('Success', 'Your Purchase Success', 'success');
+                this.disabled = false;
+              },
+              () => {
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
+                this.disabled = false;
+              })
           })
         }).catch(error => {
           console.log(error)
@@ -728,9 +735,16 @@ export default {
           this.child.price = this.getCurrentCategory.price
           let formdata = getFormData(this.child)
           Horo.post("1875/childNaming/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                this.$swal('Success', 'Your Purchase Success', 'success');
+                this.disabled = false;
+              },
+              () => {
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
+                this.disabled = false;
+              })
           })
         }).catch(error => {
           console.log(error)
@@ -750,9 +764,16 @@ export default {
           this.oneyear.price = this.getCurrentCategory.price
           let formdata = getFormData(this.oneyear)
           Horo.post("1875/oneyear/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                this.$swal('Success', 'Your Purchase Success', 'success');
+                this.disabled = false;
+              },
+              () => {
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
+                this.disabled = false;
+              })
           })
         }).catch(error => {
           console.log(error)
@@ -772,16 +793,23 @@ export default {
           this.business.price = this.getCurrentCategory.price
           let formdata = getFormData(this.business)
           Horo.post("1875/businessNaming/horoscope", formdata).then((response) => {
-            console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                this.$swal('Success', 'Your Purchase Success', 'success');
+                this.disabled = false;
+              },
+              () => {
+                this.$swal('Failed', 'Your Purchase Failed', 'error');
+                this.disabled = false;
+              })
           })
         }).catch(error => {
           console.log(error)
           this.message = 'Something went wrong'
         });
       } else {
-        alert("Plz fill all required fields")
+        this.$swal('Oops', 'You need to fill all fields', 'error');
       }
 
 
