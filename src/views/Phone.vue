@@ -379,7 +379,7 @@ export default {
         });
       }
       else {
-        alert("Plz fill all required fields")
+        this.$swal('Oops', 'You need to fill all fields', 'error');
       }
 
 
