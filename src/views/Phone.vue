@@ -366,7 +366,13 @@ export default {
           Horo.post("1875/callService/horoscope", formdata).then((response) => {
             console.log(response)
             this.res_status = response.data.status
-            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app, {}, {})
+            this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
+              () => {
+                alert('payment success')
+              },
+              () => {
+                alert('payment failed')
+              })
           })
         }).catch(error => {
           console.log(error)
