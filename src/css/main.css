@@ -23307,3 +23307,8 @@ img.absolute_image {
 .woocommerce select{
 	background: #3e1e68 !important;
 }
+
+.form-control:not(select){
+	background:#F2EFF7 !important;
+	color: #3E1E68  !important;
+}
