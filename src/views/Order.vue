@@ -23,16 +23,29 @@
               <code>audio</code> element.
             </audio>
           </div>
+
+          <div
+            class="col-md-12"
+            v-if="type == 'mp4'"
+          >
+            <video
+              controls
+              :src="file"
+              style="padding-left: 5em"
+            >
+              Your browser does not support the
+              <code>video</code> element.
+            </video>
+          </div>
           <div
             class="col-md-12"
             v-if="type == 'pdf'"
           >
             <a
-              class="woocommerce-Button button"
               :href="file"
-            >
-              Download
-            </a>
+              v-text="item.name"
+              @click.prevent="downloadItem(item)"
+            />
           </div>
         </div>
         <div
@@ -40,9 +53,11 @@
           v-if="status == 0"
         >
           <div class="col-md-12">
-            <p>
+
+            <h4 class="mm-font __mm cat">ဟောစာတမ်းအတွက်အဖြေမရှိသေးပါ</h4>
+            <!-- <p>
               ဟောစာတမ်းအတွက်အဖြေမရှိသေးပါ
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -54,12 +69,14 @@
 <script>
 import { mapGetters } from "vuex";
 import { Horo } from "@core/lib/http-common";
+import axios from 'axios';
 
 export default {
   name: `Order`,
   data () {
     return {
       order: this.$route.params.order,
+      item: '',
       status: '',
       type: '',
       file: ''
@@ -74,10 +91,24 @@ export default {
     await Horo.post("1875/horoscope/getFile", {
       'order_id': this.order.order_id
     }).then((response) => {
+      this.item = response.data
       this.status = response.data.status
       this.type = response.data.file.split('.').pop();
       this.file = response.data.file
     })
+  },
+  methods: {
+    downloadItem ({ file, name }) {
+      axios.get(file, { responseType: 'blob' })
+        .then(response => {
+          const blob = new Blob([response.data], { type: 'application/pdf' })
+          const link = document.createElement('a')
+          link.href = URL.createObjectURL(blob)
+          link.download = name
+          link.click()
+          URL.revokeObjectURL(link.href)
+        }).catch(console.error)
+    }
   }
 };
 </script>
