@@ -32,7 +32,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးသက္ကရာဇ်</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="birth_date"
                         v-model="phone.birth_date"
@@ -41,13 +41,46 @@
                     </label>
                     <label class="form-group">
                       <span class="mm-font __mm">နေ့နံ</span>
-                      <input
-                        type="text"
+                      <select
                         class="form-control"
                         name="nyih_nan"
                         v-model="phone.nyih_nan"
                         required
-                      />
+                      >
+                        <option
+                          value="တနင်္ဂနွေ"
+                          class="__mm"
+                        >တနင်္ဂနွေ</option>
+                        <option
+                          value="တနင်္လာ"
+                          class="__mm"
+                        >တနင်္လာ</option>
+                        <option
+                          value="အင်္ဂါ"
+                          class="__mm"
+                        >အင်္ဂါ</option>
+                        <option
+                          value="ဗုဒ္ဓဟူး"
+                          class="__mm"
+                        >ဗုဒ္ဓဟူး</option>
+                        <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
+                        <option
+                          value="ကြာသပတေး"
+                          class="__mm"
+                        >ကြာသပတေး</option>
+                        <option
+                          value="သောကြာ"
+                          class="__mm"
+                        >သောကြာ</option>
+                        <option
+                          value="စနေ"
+                          class="__mm"
+                        >စနေ</option>
+                      </select>
                     </label>
                     <input
                       type="radio"
@@ -132,12 +165,9 @@
                     <label class="form-group">
                       <h4
                         class="mm-font __mm"
-                        style="color: white;font-size: 15px;"
+                        style="font-size: 15px;"
                       >ဗေဒင်ဆရာ/မ များမှ ဖုန်းခေါ်ဆို ပေးစေချင်သောအချိန်</h4>
-                      <h5
-                        class="mm-font __mm"
-                        style="color: white"
-                      >တနင်္လာ မှ စနေထိ၊မနက် ၉နာရီ မှ ညနေ ၅နာရီအတွင်းသာ</h5>
+                      <h5 class="mm-font __mm">တနင်္လာ မှ စနေထိ၊မနက် ၉နာရီ မှ ညနေ ၅နာရီအတွင်းသာ</h5>
                       <input
                         type="text"
                         class="form-control mm-font"
@@ -182,10 +212,6 @@
                           value="ဆရာမ သန့်ထားဆု"
                           class="mm-font __mm"
                         >ဆရာမ သန့်ထားဆု</option>
-                        <option
-                          value="ဆရာ မင်းသုကျော်ခေါင်"
-                          class="mm-font __mm"
-                        >ဆရာ မင်းသုကျော်ခေါင်</option>
                         <option
                           value="ဆရာ ကျော်ဇောဟန်"
                           class="__mm"

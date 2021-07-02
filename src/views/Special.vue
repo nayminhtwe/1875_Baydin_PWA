@@ -65,6 +65,11 @@
                           class="__mm"
                         >ဗုဒ္ဓဟူး</option>
                         <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
+                        <option
                           value="ကြာသပတေး"
                           class="__mm"
                         >ကြာသပတေး</option>
@@ -81,7 +86,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးသက္ကရာဇ်(7.11.1990)</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="g_birth_date"
                         v-model="love.g_birth_date"
@@ -131,20 +136,25 @@
                       >
                         <option
                           value="တနင်္ဂနွေ"
-                          class="mm-font __mm"
+                          class="__mm"
                         >တနင်္ဂနွေ</option>
                         <option
                           value="တနင်္လာ"
-                          class="mm-font __mm"
+                          class="__mm"
                         >တနင်္လာ</option>
                         <option
                           value="အင်္ဂါ"
-                          class="mm-font __mm"
+                          class="__mm"
                         >အင်္ဂါ</option>
                         <option
                           value="ဗုဒ္ဓဟူး"
                           class="__mm"
                         >ဗုဒ္ဓဟူး</option>
+                        <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
                         <option
                           value="ကြာသပတေး"
                           class="__mm"
@@ -162,7 +172,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးသက္ကရာဇ်(5.12.1990)</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="b_birth_date"
                         v-model="love.b_birth_date"
@@ -224,7 +234,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးနေ့(30.11.2004)</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="birth_date"
                         v-model="child.birth_date"
@@ -280,13 +290,47 @@
                         for
                         class="mm-font __mm"
                       >နေ့နံ</span>
-                      <input
-                        type="text"
+                      <select
                         class="form-control"
                         name="nyih_nan"
                         v-model="child.nyih_nan"
                         required
-                      />
+                      >
+                        <option
+                          value="တနင်္ဂနွေ"
+                          class="__mm"
+                        >တနင်္ဂနွေ</option>
+                        <option
+                          value="တနင်္လာ"
+                          class="__mm"
+                        >တနင်္လာ</option>
+                        <option
+                          value="အင်္ဂါ"
+                          class="__mm"
+                        >အင်္ဂါ</option>
+                        <option
+                          value="ဗုဒ္ဓဟူး"
+                          class="__mm"
+                        >ဗုဒ္ဓဟူး</option>
+                        <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
+                        <option
+                          value="ကြာသပတေး"
+                          class="__mm"
+                        >ကြာသပတေး</option>
+                        <option
+                          value="သောကြာ"
+                          class="__mm"
+                        >သောကြာ</option>
+                        <option
+                          value="စနေ"
+                          class="__mm"
+                        >စနေ</option>
+                      </select>
+
                     </label>
 
                     <input
@@ -377,7 +421,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးနေ့ (30.11.2004)</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="birth_date"
                         v-model="business.birth_date"
@@ -422,13 +466,46 @@
                         for
                         class="mm-font __mm"
                       >နေ့သား(လုပ်ငန်းရှင်)</span>
-                      <input
-                        type="text"
+                      <select
                         class="form-control"
                         name="nyih_tha"
                         v-model="business.nyih_tha"
                         required
-                      />
+                      >
+                        <option
+                          value="တနင်္ဂနွေ"
+                          class="__mm"
+                        >တနင်္ဂနွေ</option>
+                        <option
+                          value="တနင်္လာ"
+                          class="__mm"
+                        >တနင်္လာ</option>
+                        <option
+                          value="အင်္ဂါ"
+                          class="__mm"
+                        >အင်္ဂါ</option>
+                        <option
+                          value="ဗုဒ္ဓဟူး"
+                          class="__mm"
+                        >ဗုဒ္ဓဟူး</option>
+                        <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
+                        <option
+                          value="ကြာသပတေး"
+                          class="__mm"
+                        >ကြာသပတေး</option>
+                        <option
+                          value="သောကြာ"
+                          class="__mm"
+                        >သောကြာ</option>
+                        <option
+                          value="စနေ"
+                          class="__mm"
+                        >စနေ</option>
+                      </select>
                     </label>
                     <p>
                       <input
@@ -459,7 +536,7 @@
                     <label class="form-group">
                       <span class="mm-font __mm">မွေးနေ့(30.11.2004)</span>
                       <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="birth_date"
                         v-model="oneyear.birth_date"
