@@ -128,7 +128,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mm-font __mm cat">ဖုန်းခေါ်၍ ဗေဒင်မေးမည်။</h1>
+          <h1 class="mm-font __mm cat">ဗေဒင်ဆရာမှဖုန်းပြန်လည်ခေါ်ဆိုပေးမည်</h1>
         </div>
         <div class="col-xl-4 col-lg-6">
           <div class="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
