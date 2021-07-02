@@ -15,10 +15,11 @@
               class="item-content max-content"
               style="word-break: break-all"
             >
-              <p
+              <!-- <p
                 v-for="content in getContents"
                 :key="content.id"
-              >{{ JSON.parse(content.content)[0] }}</p>
+              >{{ JSON.parse(content.content)[0] }}</p> -->
+              <p>{{ JSON.parse(getContents[0].content)[0] }}</p>
             </div>
           </div>
           <div class="share_buttons social_part">
