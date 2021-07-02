@@ -41,9 +41,11 @@
             class="col-md-12"
             v-if="type == 'pdf'"
           >
-            <a
+            <button
+              class="woocommerce-Button button"
               :href="file"
               v-text="item.name"
+              style="margin-left: 5em"
               @click.prevent="downloadItem(item)"
             />
           </div>
