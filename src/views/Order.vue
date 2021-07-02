@@ -1,10 +1,12 @@
 <template>
-  <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50">
+  <section class="ds s-pt-30 s-pb-20 s-pt-xl-60 s-pb-xl-40 c-gutter-60 c-mb-30">
+    <!-- <section class="ds s-pt-90 s-pb-40 s-pt-xl-150 s-pb-xl-100 c-gutter-60 c-mb-50"> -->
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4 class="mm-font __mm cat">{{ order.order_id }}</h4>
-          <h6 class="mm-font __mm cat">{{ order.amount }}</h6>
+          <h4 class="mm-font __mm cat">{{ order.category_name }}</h4>
+          <h6 class="mm-font __mm cat">{{ moment(order.createdAt).format('YYYY-MM-DD HH:mm:ss') }}</h6>
+          <!-- <h6 class="mm-font __mm cat">{{ order.amount }}</h6> -->
         </div>
         <div
           class="row"

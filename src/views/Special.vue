@@ -776,7 +776,8 @@ export default {
         HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
         HTTP.post("subscription/precreate", {
           'category_id': this.getCurrentCategory.id,
-          'amount': this.getCurrentCategory.price
+          'amount': this.getCurrentCategory.price,
+          'category_name': 'အချစ်ဇာတာဟောစာတမ်း'
         }).then((response) => {
           const res = response.data
           this.love.order_id = res.order_id
@@ -805,7 +806,8 @@ export default {
         HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
         HTTP.post("subscription/precreate", {
           'category_id': this.getCurrentCategory.id,
-          'amount': this.getCurrentCategory.price
+          'amount': this.getCurrentCategory.price,
+          'category_name': 'အမည်ပေး(ရင်သွေးအမည်)'
         }).then((response) => {
           const res = response.data
           this.child.order_id = res.order_id
@@ -834,7 +836,8 @@ export default {
         HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
         HTTP.post("subscription/precreate", {
           'category_id': this.getCurrentCategory.id,
-          'amount': this.getCurrentCategory.price
+          'amount': this.getCurrentCategory.price,
+          'category_name': 'တနစ်စာအဟေ'
         }).then((response) => {
           const res = response.data
           this.oneyear.order_id = res.order_id
@@ -863,7 +866,8 @@ export default {
         HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
         HTTP.post("subscription/precreate", {
           'category_id': this.getCurrentCategory.id,
-          'amount': this.getCurrentCategory.price
+          'amount': this.getCurrentCategory.price,
+          'category_name': 'အမည်ပေး(လုပ်ငန်းအမည်)'
         }).then((response) => {
           const res = response.data
           this.business.order_id = res.order_id

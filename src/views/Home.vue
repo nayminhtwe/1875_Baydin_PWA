@@ -188,12 +188,12 @@
             <div class="item-content">
               <p class="mt-0 links-maincolor2">
                 <router-link :to="{ name: 'order', params: { order: order }}">
-                  {{ order.order_id }}
+                  {{ order.category_name }}
                 </router-link>
                 <!-- <a href="service-single.html">{{ order.order_id }}</a> -->
               </p>
               <p>
-                {{ order.amount }}
+                {{ moment(order.createdAt).format('YYYY-MM-DD HH:mm:ss') }}
               </p>
               <!-- <a href="service-single.html" class="mt-30 font-2">Read Now <i class="fa fa-caret-right color-main ml-2"></i></a> -->
             </div>

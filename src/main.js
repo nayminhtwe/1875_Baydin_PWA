@@ -6,11 +6,14 @@ import store from './store'
 import LoadScript from 'vue-plugin-load-script';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
+import moment from 'moment'
 
 Vue.config.productionTip = false
 
 Vue.use(LoadScript);
 Vue.use(VueSweetalert2);
+
+Vue.prototype.moment = moment
 
 Vue.loadScript("/js/kbzpay.js").then(() => {
 
