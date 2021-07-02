@@ -188,7 +188,7 @@
             <div class="item-content">
               <p class="mt-0 links-maincolor2">
                 <router-link :to="{ name: 'order', params: { order: order }}">
-                  {{ order.category_name }}
+                  {{ categories[order.category_name] }}
                 </router-link>
                 <!-- <a href="service-single.html">{{ order.order_id }}</a> -->
               </p>
@@ -216,6 +216,14 @@ export default {
   data () {
     return {
       types: types,
+      categories: {
+        'love': ' အချစ်ဇာတာဟောစာတမ်',
+        'child': 'အမည်ပေး(ရင်သွေးအမည်)',
+        'oneyear': 'တနစ်စာအဟော',
+        'business': 'အမည်ပေး(လုပ်ငန်းအမည်)',
+        'direct': 'ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်',
+        'phone': 'ဗေဒင်ဆရာမှဖုန်းပြန်လည်ခေါ်ဆိုပေးမည်',
+      },
       orders: [],
     }
   },

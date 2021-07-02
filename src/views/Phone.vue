@@ -385,7 +385,7 @@ export default {
         HTTP.post("subscription/precreate", {
           'category_id': 0,
           'amount': this.phone.price,
-          'category_name': 'ဗေဒင်ဆရာမှဖုန်းပြန်လည်ခေါ်ဆိုပေးမည်'
+          'category_name': 'phone'
         }).then((response) => {
           const res = response.data
           this.phone.order_id = res.order_id

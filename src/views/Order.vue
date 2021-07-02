@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4 class="mm-font __mm cat">{{ order.category_name }}</h4>
+          <h4 class="mm-font __mm cat">{{ categories[order.category_name] }}</h4>
           <h6 class="mm-font __mm cat">{{ moment(order.createdAt).format('YYYY-MM-DD HH:mm:ss') }}</h6>
           <!-- <h6 class="mm-font __mm cat">{{ order.amount }}</h6> -->
         </div>
@@ -79,6 +79,14 @@ export default {
   name: `Order`,
   data () {
     return {
+      categories: {
+        'love': ' အချစ်ဇာတာဟောစာတမ်',
+        'child': 'အမည်ပေး(ရင်သွေးအမည်)',
+        'oneyear': 'တနစ်စာအဟော',
+        'business': 'အမည်ပေး(လုပ်ငန်းအမည်)',
+        'direct': 'ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်',
+        'phone': 'ဗေဒင်ဆရာမှဖုန်းပြန်လည်ခေါ်ဆိုပေးမည်',
+      },
       order: this.$route.params.order,
       item: '',
       status: '',

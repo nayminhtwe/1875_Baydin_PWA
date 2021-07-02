@@ -339,7 +339,7 @@ export default {
         HTTP.post("subscription/precreate", {
           'category_id': 0,
           'amount': this.direct.price,
-          'category_name': 'ဗေဒင်ဆရာနဲ့တိုက်ရိုက်မေးမည်'
+          'category_name': 'direct'
         }).then((response) => {
           const res = response.data
           this.direct.order_id = res.order_id
