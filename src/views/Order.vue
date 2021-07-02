@@ -52,10 +52,7 @@
             />
           </div>
         </div>
-        <div
-          class="row"
-          v-if="status == 0"
-        >
+        <div v-if="status == 0">
           <div class="col-md-12">
 
             <h6 class="mm-font __mm cat">ဟောစာတမ်းအတွက်အဖြေမရှိသေးပါ</h6>
@@ -80,7 +77,7 @@ export default {
   data () {
     return {
       categories: {
-        'love': ' အချစ်ဇာတာဟောစာတမ်',
+        'love': 'အချစ်ဇာတာဟောစာတမ်း',
         'child': 'အမည်ပေး(ရင်သွေးအမည်)',
         'oneyear': 'တနစ်စာအဟော',
         'business': 'အမည်ပေး(လုပ်ငန်းအမည်)',

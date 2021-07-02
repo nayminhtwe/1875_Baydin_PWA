@@ -217,7 +217,7 @@ export default {
     return {
       types: types,
       categories: {
-        'love': ' အချစ်ဇာတာဟောစာတမ်',
+        'love': 'အချစ်ဇာတာဟောစာတမ်း',
         'child': 'အမည်ပေး(ရင်သွေးအမည်)',
         'oneyear': 'တနစ်စာအဟော',
         'business': 'အမည်ပေး(လုပ်ငန်းအမည်)',
