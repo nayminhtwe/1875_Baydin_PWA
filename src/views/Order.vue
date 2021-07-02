@@ -6,8 +6,14 @@
           <h4 class="mm-font __mm cat">{{ order.order_id }}</h4>
           <h6 class="mm-font __mm cat">{{ order.amount }}</h6>
         </div>
-        <div class="row">
-          <div class="col-md-12">
+        <div
+          class="row"
+          v-if="status == 1"
+        >
+          <div
+            class="col-md-12"
+            v-if="type == 'mp3' || type == 'wav'"
+          >
             <audio
               controls
               :src="file"
@@ -17,10 +23,30 @@
               <code>audio</code> element.
             </audio>
           </div>
+          <div
+            class="col-md-12"
+            v-if="type == 'pdf'"
+          >
+            <a
+              class="woocommerce-Button button"
+              :href="file"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+        <div
+          class="row"
+          v-if="status == 0"
+        >
+          <div class="col-md-12">
+            <p>
+              ဟောစာတမ်းအတွက်အဖြေမရှိသေးပါ
+            </p>
+          </div>
         </div>
 
       </div>
-
     </div>
   </section>
 </template>
@@ -34,6 +60,8 @@ export default {
   data () {
     return {
       order: this.$route.params.order,
+      status: '',
+      type: '',
       file: ''
     }
   },
@@ -44,8 +72,10 @@ export default {
   },
   async created () {
     await Horo.post("1875/horoscope/getFile", {
-      'order_id': "219b35c0-a617-12ea-a0ce-376ad1581769"
+      'order_id': this.order.order_id
     }).then((response) => {
+      this.status = response.data.status
+      this.type = response.data.file.split('.').pop();
       this.file = response.data.file
     })
   }

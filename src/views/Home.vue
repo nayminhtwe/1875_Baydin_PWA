@@ -160,7 +160,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mm-font __mm cat">အဖြေများ</h1>
+          <h1 class="mm-font __mm cat">ဟောစာတမ်းအတွက်အဖြေများ</h1>
         </div>
         <div
           class="col-xl-4 col-lg-6"
