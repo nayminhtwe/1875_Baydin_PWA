@@ -13,6 +13,7 @@ const Order = () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
 const Category = () => import(/* webpackChunkName: "about" */ '../views/Category.vue')
 const Free = () => import(/* webpackChunkName: "about" */ '../views/Free.vue')
 const Orders = () => import(/* webpackChunkName: "about" */ '../views/Orders.vue')
+const Star = () => import(/* webpackChunkName: "about" */ '../views/Star.vue')
 
 const routes = [
   {
@@ -67,6 +68,11 @@ const routes = [
     path: '/orders',
     name: 'orders',
     component: Orders
+  },
+  {
+    path: '/star/:categoryName',
+    name: 'star',
+    component: Star
   },
 ]
 
