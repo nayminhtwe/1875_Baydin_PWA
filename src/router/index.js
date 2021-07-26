@@ -11,6 +11,8 @@ const Direct = () => import(/* webpackChunkName: "about" */ '../views/Direct.vue
 const Phone = () => import(/* webpackChunkName: "about" */ '../views/Phone.vue')
 const Order = () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
 const Category = () => import(/* webpackChunkName: "about" */ '../views/Category.vue')
+const Free = () => import(/* webpackChunkName: "about" */ '../views/Free.vue')
+const Orders = () => import(/* webpackChunkName: "about" */ '../views/Orders.vue')
 
 const routes = [
   {
@@ -55,6 +57,16 @@ const routes = [
     path: '/category/:categoryName',
     name: 'category',
     component: Category
+  },
+  {
+    path: '/free',
+    name: 'free',
+    component: Free
+  },
+  {
+    path: '/orders',
+    name: 'orders',
+    component: Orders
   },
 ]
 

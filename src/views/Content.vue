@@ -44,8 +44,8 @@ export default {
       getContents: "categoryStore/getContents"
     })
   },
-  created () {
-    this.$store.dispatch(
+  async created () {
+    await this.$store.dispatch(
       "categoryStore/getContents",
       this.$route.params.categoryId
     );

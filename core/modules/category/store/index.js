@@ -6,7 +6,12 @@ const categoryStore = {
   namespaced: true,
   state: {
     list: [],
-    contents: [],
+    contents: [
+      {
+        category_id: 0,
+        content: '[]'
+      }
+    ],
     showLoader: false,
     current: {},
     breadcrumbs: {
