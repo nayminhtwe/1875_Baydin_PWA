@@ -294,7 +294,7 @@ export default {
         about: '',
         baydin_sayar: '',
         marital_status: '',
-        price: '0',
+        price: 0,
       }
     }
   },

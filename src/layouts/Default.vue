@@ -1,18 +1,18 @@
 <template>
   <div id="canvas">
     <div id="box_wrapper">
-      <main-header />
+      <!-- <main-header /> -->
       <main class="LayoutDefault__main">
         <slot />
       </main>
-      <main-footer />
+      <!-- <main-footer /> -->
     </div>
   </div>
 </template>
 
 <script>
-import MainHeader from '@/components/core/blocks/Header/Header.vue'
-import MainFooter from '@/components/core/blocks/Footer/Footer.vue'
+// import MainHeader from '@/components/core/blocks/Header/Header.vue'
+// import MainFooter from '@/components/core/blocks/Footer/Footer.vue'
 
 export default {
   name: `LayoutDefault`,
@@ -20,8 +20,8 @@ export default {
     title: '1875 Bay Din'
   },
   components: {
-    MainHeader,
-    MainFooter
+    // MainHeader,
+    // MainFooter
   }
 };
 </script>

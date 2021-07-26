@@ -10,6 +10,7 @@ const Special = () => import(/* webpackChunkName: "about" */ '../views/Special.v
 const Direct = () => import(/* webpackChunkName: "about" */ '../views/Direct.vue')
 const Phone = () => import(/* webpackChunkName: "about" */ '../views/Phone.vue')
 const Order = () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
+const Category = () => import(/* webpackChunkName: "about" */ '../views/Category.vue')
 
 const routes = [
   {
@@ -31,7 +32,7 @@ const routes = [
     component: Special
   },
   {
-    path: '/direct/:categoryName',
+    path: '/direct/:categoryName?',
     name: 'direct',
     component: Direct
   },
@@ -49,6 +50,11 @@ const routes = [
     path: '/order',
     name: 'order',
     component: Order
+  },
+  {
+    path: '/category/:categoryName',
+    name: 'category',
+    component: Category
   },
 ]
 
