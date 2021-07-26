@@ -18,10 +18,10 @@
                     style="display: block;"
                     v-if="getCurrentCategory.id === 275"
                   >
-                    <h3
+                    <!-- <h3
                       class="mm-font __mm"
                       align="center"
-                    >{{ getCurrentCategory.title }}</h3>
+                    >{{ getCurrentCategory.title }}</h3> -->
                     <p
                       class="mm-font __mm"
                       align="center"
@@ -223,10 +223,10 @@
                     style="display: block;"
                     v-if="getCurrentCategory.id === 11"
                   >
-                    <h3
+                    <!-- <h3
                       class="mm-font __mm"
                       align="center"
-                    >{{ getCurrentCategory.title }}</h3>
+                    >{{ getCurrentCategory.title }}</h3> -->
                     <p
                       class="mm-font __mm"
                       align="center"
@@ -400,10 +400,10 @@
                     role="form"
                     v-if="getCurrentCategory.id === 267"
                   >
-                    <h3
+                    <!-- <h3
                       class="mm-font __mm"
                       align="center"
-                    >{{ getCurrentCategory.title }}</h3>
+                    >{{ getCurrentCategory.title }}</h3> -->
                     <p
                       class="mm-font __mm"
                       align="center"
@@ -525,10 +525,10 @@
                     v-if="getCurrentCategory.id === 10"
                   >
 
-                    <h3
+                    <!-- <h3
                       class="mm-font __mm"
                       align="center"
-                    >{{ getCurrentCategory.title }}</h3>
+                    >{{ getCurrentCategory.title }}</h3> -->
                     <p
                       class="mm-font __mm"
                       align="center"
