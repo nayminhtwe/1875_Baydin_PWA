@@ -633,13 +633,46 @@
                         for
                         class="mm-font __mm"
                       >နေ့နံ</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="nyih_nan"
+                      <select
+                        name="g_birth_day"
                         v-model="oneyear.nyih_nan"
+                        class="mm-font __mm"
                         required
-                      />
+                      >
+                        <option
+                          value="တနင်္ဂနွေ"
+                          class="__mm"
+                        >တနင်္ဂနွေ</option>
+                        <option
+                          value="တနင်္လာ"
+                          class="__mm"
+                        >တနင်္လာ</option>
+                        <option
+                          value="အင်္ဂါ"
+                          class="__mm"
+                        >အင်္ဂါ</option>
+                        <option
+                          value="ဗုဒ္ဓဟူး"
+                          class="__mm"
+                        >ဗုဒ္ဓဟူး</option>
+                        <option
+                          value="ရာဟု"
+                          class="__mm"
+                        >ရာဟု</option>
+
+                        <option
+                          value="ကြာသပတေး"
+                          class="__mm"
+                        >ကြာသပတေး</option>
+                        <option
+                          value="သောကြာ"
+                          class="__mm"
+                        >သောကြာ</option>
+                        <option
+                          value="စနေ"
+                          class="__mm"
+                        >စနေ</option>
+                      </select>
                     </label>
                     <label class="form-group">
                       <span
