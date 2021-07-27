@@ -684,6 +684,7 @@
                         class="form-control"
                         name="about"
                         v-model="oneyear.about"
+                        maxlength="1000"
                         required
                       />
                     </label>
@@ -804,6 +805,13 @@ export default {
   },
   methods: {
     precreate () {
+      if (this.child.birth_time == '') {
+        this.child.birth_time = ' '
+      }
+      if (this.oneyear.birth_time == '') {
+        this.oneyear.birth_time = ' '
+      }
+
       if (this.getCurrentCategory.id === 275 && checkFormModel(this.love)) {
         this.disabled = true
         HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
