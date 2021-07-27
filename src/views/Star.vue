@@ -246,9 +246,29 @@ export default {
           Horo.post("1875/starbaydin/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
-              () => {
-                this.$swal('Success', 'Your Purchase Success', 'success');
-                this.disabled = false;
+              ({ resultCode, lang }) => {
+                if (resultCode == 1) {
+                  if (lang == 'en') {
+                    this.$swal('Success', 'Your Purchase Success', 'success');
+                    this.$router.push({ name: 'home' })
+                  }
+                  if (lang == 'my') {
+                    this.$swal('အောင်မြင်ပါသည်', 'ဝယ်ယူပြီးပါပြီ', 'success');
+                    this.$router.push({ name: 'home' })
+                  }
+                }
+                if (resultCode == 2) {
+                  if (lang == 'en') {
+                    this.$swal('Failed', 'Your Purchase Failed', 'error');
+                    this.disabled = false;
+                  }
+                  if (lang == 'my') {
+                    this.$swal('မအောင်မြင်ပါ', 'ထပ်မံကြိုးစားပေးပါ', 'error');
+                    this.disabled = false;
+                  }
+                }
+
+
               },
               () => {
                 this.$swal('Failed', 'Your Purchase Failed', 'error');

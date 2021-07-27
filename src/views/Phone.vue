@@ -196,7 +196,7 @@
                       ></textarea>
                     </label>
 
-                    <label class="form-group">
+                    <!-- <label class="form-group">
                       <span class="mm-font __mm">ဗေဒင်ဆရာ</span>
                       <select
                         name="baydin_sayar"
@@ -241,7 +241,7 @@
                           class="__mm"
                         >ဆရာမ ဝင့်ယမုံဦး</option>
                       </select>
-                    </label>
+                    </label> -->
 
                     <!-- <p class="mm-font"></p>
                     <h2 class="text-center __mm">ဗေဒင်ဆရာများ</h2>
@@ -366,7 +366,7 @@ export default {
         call_time: '',
         user_id: '0',
         about: '',
-        baydin_sayar: '',
+        baydin_sayar: ' ',
         marital_status: '',
         price: '4500',
       }
@@ -394,9 +394,29 @@ export default {
           Horo.post("1875/callService/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
-              () => {
-                this.$swal('Success', 'Your Purchase Success', 'success');
-                this.disabled = false;
+              ({ resultCode, lang }) => {
+                if (resultCode == 1) {
+                  if (lang == 'en') {
+                    this.$swal('Success', 'Your Purchase Success', 'success');
+                    this.$router.push({ name: 'home' })
+                  }
+                  if (lang == 'my') {
+                    this.$swal('အောင်မြင်ပါသည်', 'ဝယ်ယူပြီးပါပြီ', 'success');
+                    this.$router.push({ name: 'home' })
+                  }
+                }
+                if (resultCode == 2) {
+                  if (lang == 'en') {
+                    this.$swal('Failed', 'Your Purchase Failed', 'error');
+                    this.disabled = false;
+                  }
+                  if (lang == 'my') {
+                    this.$swal('မအောင်မြင်ပါ', 'ထပ်မံကြိုးစားပေးပါ', 'error');
+                    this.disabled = false;
+                  }
+                }
+
+
               },
               () => {
                 this.$swal('Failed', 'Your Purchase Failed', 'error');
