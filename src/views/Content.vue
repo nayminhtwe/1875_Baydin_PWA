@@ -7,9 +7,9 @@
           <div class="vertical-item bg-darkblue text-center content-padding padding-big">
             <div class="item-media">
               <img
-                :src="getCurrentCategory.image"
+                :src="category.image"
                 alt="img"
-                v-if="getCurrentCategory.image"
+                v-if="category.image"
               />
             </div>
             <div
@@ -20,7 +20,9 @@
                 v-for="content in getContents"
                 :key="content.id"
               >{{ JSON.parse(content.content)[0] }}</p> -->
-              <p>{{ JSON.parse(getContents[0].content)[0] }}</p>
+
+              <p v-if="contents">{{ JSON.parse(contents[0].content)[0] }}</p>
+              <p v-if="contents">{{ JSON.parse(contents[0].content)[1] }}</p>
             </div>
           </div>
           <div class="share_buttons social_part">
@@ -34,10 +36,16 @@
 
 <script>
 import { mapGetters } from "vuex";
-// import { HTTP } from "@core/lib/http-common";
+import { HTTP } from "@core/lib/http-common";
 
 export default {
   name: `Normal`,
+  data () {
+    return {
+      category: '',
+      contents: ''
+    }
+  },
   computed: {
     ...mapGetters({
       getCurrentCategory: "categoryStore/getCurrentCategory",
@@ -49,6 +57,10 @@ export default {
       "categoryStore/getContents",
       this.$route.params.categoryId
     );
+    await HTTP.get(`category/${this.getCurrentCategory.parent_id}`).then((response) => {
+      this.category = response.data;
+    });
+    this.contents = this.getContents
   }
 };
 </script>

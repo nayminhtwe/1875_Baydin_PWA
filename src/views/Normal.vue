@@ -24,14 +24,14 @@
                 <div class="media-links">
                   <router-link
                     class="abs-link"
-                    :to="{ name: 'content', params: { categoryId: category.id }}"
+                    :to="{ name: 'content', params: { categoryId: category.id, parentId: category.parent_id }}"
                   />
                   <!-- <a class="abs-link" title href="service-single.html"></a> -->
                 </div>
               </div>
               <div class="item-content">
                 <h5 class="mt-0 links-maincolor2">
-                  <router-link :to="{ name: 'content', params: { categoryId: category.id }}">
+                  <router-link :to="{ name: 'content', params: { categoryId: category.id, parentId: category.parent_id }}">
                     {{ category.title }}
                   </router-link>
                   <!-- <a href="service-single.html">{{ category.title }}</a> -->

@@ -1,5 +1,5 @@
 <template>
-  <section class="ds s-pt-30 s-pb-20 s-pt-xl-60 s-pb-xl-40 c-gutter-10 c-mb-30">
+  <section class="ds s-pt-30 s-pb-20 s-pt-xl-60 s-pb-xl-40 c-gutter-24 c-mb-30">
     <!-- <div class="container">
       <div class="row">
         <div class="col-md-12">

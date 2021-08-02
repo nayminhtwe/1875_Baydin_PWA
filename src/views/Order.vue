@@ -116,7 +116,9 @@ export default {
           link.download = name
           link.click()
           URL.revokeObjectURL(link.href)
-        }).catch(console.error)
+        }).catch(error => {
+          alert(error)
+        })
     }
   }
 };
