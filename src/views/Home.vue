@@ -1,5 +1,5 @@
 <template>
-  <section class="ds s-pt-30 s-pb-20 s-pt-xl-60 s-pb-xl-40 c-gutter-24 c-mb-30">
+  <section class="ds s-pt-30 s-pb-20 s-pt-xl-60 s-pb-xl-40 c-gutter-60 c-mb-30">
     <!-- <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -9,7 +9,10 @@
     </div> -->
 
     <div class="container">
-      <div class="row">
+      <div
+        class="row"
+        id="box"
+      >
         <div
           class="col-xl-4 col-lg-6 col-6"
           v-for="category in displayCategories"
@@ -146,5 +149,8 @@ export default {
 <style scoped>
 .cat {
   font-size: 2em;
+}
+#box {
+  margin: 0 0;
 }
 </style>
