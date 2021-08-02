@@ -15,14 +15,15 @@
             <div
               class="item-content max-content"
               style="word-break: break-all"
+              v-if="contents.content"
             >
-              <!-- <p
-                v-for="content in getContents"
-                :key="content.id"
-              >{{ JSON.parse(content.content)[0] }}</p> -->
+              <p
+                v-for="(c, index) in JSON.parse(contents.content)"
+                :key="index"
+              >{{ c }}</p>
 
-              <p v-if="contents">{{ JSON.parse(contents[0].content)[0] }}</p>
-              <p v-if="contents">{{ JSON.parse(contents[0].content)[1] }}</p>
+              <!-- <p v-if="contents">{{ JSON.parse(contents.content)[0] }}</p>
+              <p v-if="contents">{{ JSON.parse(contents.content)[1] }}</p> -->
             </div>
           </div>
           <div class="share_buttons social_part">
@@ -60,7 +61,15 @@ export default {
     await HTTP.get(`category/${this.getCurrentCategory.parent_id}`).then((response) => {
       this.category = response.data;
     });
-    this.contents = this.getContents
+    let content = this.getContents[0]
+    if (!content.for_date) {
+      this.contents = content
+    }
+
+    if (content.for_date) {
+      this.contents = this.getContents.filter(category => category.for_date == this.moment().format('YYYY-MM-DD'))[0]
+    }
+
   }
 };
 </script>
