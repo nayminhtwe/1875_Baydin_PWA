@@ -1093,10 +1093,10 @@ button {
 	transition: all 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover,
+/* input[type="submit"]:hover,
 button:hover {
 	background-color: transparent;
-}
+} */
 
 .ds input[type="submit"]:not([class]),
 .cs input[type="submit"]:not([class]),
