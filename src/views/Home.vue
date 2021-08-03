@@ -18,19 +18,21 @@
           v-for="category in displayCategories"
           :key="category.id"
         >
-          <div class="vertical-item text-center service-layout-1  content-padding">
+          <div
+            class="vertical-item text-center service-layout-1  content-padding"
+            @click="$router.push({ name: 'category', params: { categoryName: category.name }})"
+          >
             <div class="item-media">
               <img
                 :src="category.image"
                 alt="img"
               >
-              <div class="media-links">
+              <!-- <div class="media-links">
                 <router-link
                   class="abs-link"
                   :to="{ name: 'category', params: { categoryName: category.name }}"
                 />
-                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
-              </div>
+              </div> -->
             </div>
           </div>
         </div><!-- .col-* -->
