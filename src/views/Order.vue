@@ -10,7 +10,7 @@
         </div>
         <div
           class="row"
-          v-if="status == 1"
+          v-if="status === 1"
         >
           <div
             class="col-md-12"
@@ -52,7 +52,7 @@
             />
           </div>
         </div>
-        <div v-if="status == 0">
+        <div v-if="status === 0">
           <div class="col-md-12">
 
             <h6 class="mm-font __mm cat">နှစ်ရက်အတွင်းဟောစာတမ်းကိုပြန်လည်ဖြေကြားပေးပါမည်</h6>

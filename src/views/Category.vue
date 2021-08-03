@@ -11,13 +11,8 @@
               <img
                 src='@/images/category/oneyear.png'
                 alt="img"
+                @click="$router.push({ name: 'special', params: { categoryId: 10 }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'special', params: { categoryId: 10 }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -32,12 +27,14 @@
               <p id="desc">
                 တစ်နှစ်စာအထူးဟောစာတမ်းအတွက် ဉာဏ်ပူဇော်ခ ၄၅၀၀ ကျပ်ကျသင့်ပါမည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-oneyear"
-                :to="{ name: 'special', params: { categoryId: 10 }}"
+                @click="$router.push({ name: 'special', params: { categoryId: 10 }})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
+
             </div>
           </div>
         </div><!-- .col-* -->
@@ -50,13 +47,8 @@
               <img
                 src='@/images/category/clairvoyance.png'
                 alt="img"
+                @click="$router.push({ name: 'star', params: { categoryName: 'clairvoyance' }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'star', params: { categoryName: 'clairvoyance' }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -73,12 +65,12 @@
                 အချစ်ရေး၊အိမ်ထောင်ရေး၊စီးပွားရေး၊အလုပ်အကိုင်၊
                 ငွေရေးကြေးရေး၊ကျန်းမာရေး၊လူမှုရေး အဟောများကို မေးမြန်းနိုင်ပါသည်။
               </p>
-              <router-link
+              <span
                 id="btn-clairvoyance"
-                :to="{ name: 'star', params: { categoryName: 'clairvoyance' }}"
+                @click="$router.push({ name: 'star', params: { categoryName: 'clairvoyance' }})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
             </div>
           </div>
         </div><!-- .col-* -->
@@ -91,13 +83,8 @@
               <img
                 src='@/images/category/free.png'
                 alt="img"
+                @click="$router.push({ name: 'free'})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'free'}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -113,12 +100,10 @@
               <p id="desc">
                 အချစ်ဗေဒင်၊ အကျိုးပေးဂဏန်း၊ လစဉ်အဟောများကို အခမဲ့ရယူနိုင်ပါသည်။
               </p>
-              <router-link
+              <span
                 id="btn-free"
-                :to="{ name: 'free'}"
-              >
-                <span>မေးမည်</span>
-              </router-link>
+                @click="$router.push({ name: 'free'})"
+              >မေးမည်</span>
             </div>
           </div>
         </div><!-- .col-* -->
@@ -131,13 +116,8 @@
               <img
                 src='@/images/category/chiromancy.png'
                 alt="img"
+                @click="$router.push({ name: 'star', params: { categoryName: 'chiromancy' }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'star', params: { categoryName: 'chiromancy' }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -157,12 +137,14 @@
                 လူမှုရေး၊စီးပွားရေး၊အိမ်ထောင်ရေး၊အချစ်ရေး၊
                 ငွေရေးကြေးရေး၊ပညာရေး၊ကျန်းမာရေး၊ထီကံများ မေးမြန်းနိုင်ပါသည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-chiromancy"
-                :to="{ name: 'star', params: { categoryName: 'chiromancy' }}"
+                @click="$router.push({ name: 'star', params: { categoryName: 'chiromancy' }})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
+
             </div>
           </div>
         </div><!-- .col-* -->
@@ -175,13 +157,8 @@
               <img
                 src='@/images/category/child.png'
                 alt="img"
+                @click="$router.push({ name: 'special', params: { categoryId: 11 }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'special', params: { categoryId: 11 }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -196,12 +173,13 @@
               <p id="desc">
                 ကလေးအမည်ပေးအတွက် ဉာဏ်ပူဇော်ခ ၄၅၀၀ ကျပ်ကျသင့်ပါမည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-child"
-                :to="{ name: 'special', params: { categoryId: 11 }}"
+                @click="$router.push({ name: 'special', params: { categoryId: 11 }})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
             </div>
           </div>
         </div><!-- .col-* -->
@@ -214,13 +192,8 @@
               <img
                 src='@/images/category/love.png'
                 alt="img"
+                @click="$router.push({ name: 'special', params: { categoryId: 275 }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'special', params: { categoryId: 275 }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -237,12 +210,14 @@
                 ဆက်သွယ်ရမည့်ဖုန်းနံပါတ် ထည့်သွင်းရန်လိုအပ်ပါသည်။
                 အချစ်ဇာတာဟောစာတမ်းအတွက် ဉာဏ်ပူဇော်ခ ၄၅၀၀ ကျပ်ကျသင့်ပါမည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-love"
-                :to="{ name: 'special', params: { categoryId: 275 }}"
+                @click="$router.push({ name: 'special', params: { categoryId: 275 }})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
+
             </div>
           </div>
         </div><!-- .col-* -->
@@ -255,13 +230,8 @@
               <img
                 src='@/images/category/phone.png'
                 alt="img"
+                @click="$router.push({ name: 'phone'})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'phone'}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -276,12 +246,14 @@
               <p id="desc">
                 ဗေဒင်ဆရာများဖြင့် ဖုန်းခေါ်ဆို၍ တိုက်ရိုက်မေးမြန်းလိုပါက ဉာဏ်ပူဇော်ခ ၅၀၀၀ ကျပ်ကျသင့်မည်ဖြစ်ပါသည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-phone"
-                :to="{ name: 'phone'}"
+                @click="$router.push({ name: 'phone'})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
+
             </div>
           </div>
         </div><!-- .col-* -->
@@ -294,13 +266,8 @@
               <img
                 src='@/images/category/direct.png'
                 alt="img"
+                @click="$router.push({ name: 'direct'})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'direct'}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -315,12 +282,14 @@
               <p id="desc">
                 အချစ်ရေး၊အိမ်ထောင်ရေး၊ကျန်းမာရေး၊ကိုယ်ပိုင်စီးပွားရေး၊အလုပ်အကိုင်၊ပညာရေး၊ငွေရေးကြေးရေး၊ထီပေါက်ကိန်း၊လူမှုရေး၊ အထွေထွေ အဟောများ မေးမြန်းလိုပါက ဉာဏ်ပူဇော်ခ ၁၅၀၀ - ၂၀၀၀ ကျပ် ကျသင့်မည်ဖြစ်ပါသည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-direct"
-                :to="{ name: 'direct'}"
+                @click="$router.push({ name: 'direct'})"
               >
-                <span>မေးမည်</span>
-              </router-link>
+                မေးမည်
+              </span>
+
             </div>
           </div>
         </div><!-- .col-* -->
@@ -333,13 +302,8 @@
               <img
                 src='@/images/category/business.png'
                 alt="img"
+                @click="$router.push({ name: 'special', params: { categoryId: 267 }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'special', params: { categoryId: 267 }}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -354,12 +318,11 @@
               <p id="desc">
                 လုပ်ငန်းအမည်ပေးအတွက် ဉာဏ်ပူဇော်ခ ၄၅၀၀ ကျပ်ကျသင့်ပါမည်။
               </p>
-              <router-link
+
+              <span
                 id="btn-business"
-                :to="{ name: 'special', params: { categoryId: 267 }}"
-              >
-                <span>မေးမည်</span>
-              </router-link>
+                @click="$router.push({ name: 'special', params: { categoryId: 267 }})"
+              >မေးမည်</span>
             </div>
           </div>
         </div><!-- .col-* -->
@@ -372,13 +335,8 @@
               <img
                 src='@/images/category/orders.png'
                 alt="img"
+                @click="$router.push({ name: 'orders'})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'orders'}"
-                />
-              </div>
             </div>
             <div
               class="item-content"
@@ -393,12 +351,11 @@
               <p id="desc">
                 သင် ၃လအတွင်းမေးထားခဲ့ဖူးသောဟောစာတမ်းများ
               </p>
-              <router-link
+
+              <span
                 id="btn-orders"
-                :to="{ name: 'orders'}"
-              >
-                <span>ကြည့်မည်</span>
-              </router-link>
+                @click="$router.push({ name: 'orders'})"
+              >ကြည့်မည်</span>
             </div>
           </div>
         </div><!-- .col-* -->

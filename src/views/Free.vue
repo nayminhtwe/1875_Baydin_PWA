@@ -15,20 +15,16 @@
               <img
                 :src="category.image"
                 alt="img"
+                @click="$router.push({ name: 'normal', params: { categoryId: category.sub_categories[0].id }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}"
-                />
-                <!-- <a class="abs-link" title="" href="service-single.html"></a> -->
-              </div>
             </div>
             <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'normal', params: { categoryId: category.sub_categories[0].id }}">
-                  {{ category.title }}
-                </router-link>
+              <p
+                class="mt-0 links-maincolor2"
+                @click="$router.push({ name: 'normal', params: { categoryId: category.sub_categories[0].id }})"
+              >
+
+                {{ category.title }}
                 <!-- <a href="service-single.html">{{ category.title }}</a> -->
               </p>
               <!--<p>-->

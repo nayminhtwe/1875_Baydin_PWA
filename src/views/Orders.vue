@@ -15,25 +15,15 @@
               <img
                 src="https://s3.ap-southeast-1.amazonaws.com/assets.myclip.com/smart/S8q7H36jcwHbDaOsuQyeVZ3AAHQL8wqjQ3TIzbcq.png"
                 alt="img"
+                @click="$router.push({ name: 'order', params: { order: order }})"
               >
-              <div class="media-links">
-                <router-link
-                  class="abs-link"
-                  :to="{ name: 'order', params: { order: order }}"
-                />
-                <!-- <a
-                  class="abs-link"
-                  title=""
-                  href="service-single.html"
-                ></a> -->
-              </div>
             </div>
             <div class="item-content">
-              <p class="mt-0 links-maincolor2">
-                <router-link :to="{ name: 'order', params: { order: order }}">
-                  {{ categories[order.category_name] }}
-                </router-link>
-                <!-- <a href="service-single.html">{{ order.order_id }}</a> -->
+              <p
+                class="mt-0 links-maincolor2"
+                @click="$router.push({ name: 'order', params: { order: order }})"
+              >
+                {{ categories[order.category_name] }}
               </p>
               <p>
                 {{ moment(order.createdAt).format('YYYY-MM-DD HH:mm:ss') }}
