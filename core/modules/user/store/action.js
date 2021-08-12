@@ -10,13 +10,13 @@ const actions = {
         //     "response": {
         //         "result": "SUCCESS",
         //         "customer_info": {
-        //             "openID": "7249594a4d466c6b416e686e465857596e6d457239476944314843614f77436e766a704132722b477636343d"
+        //             "openID": "2d8fa0ccac8632b4e87610c3465049639df1101e6a137ee03f76882442be4ae1"
         //         },
         //         "nonce_str": "E4678D4990B742DEA8BE492F7818BC6C",
         //         "sign_type": "SHA256",
         //         "sign": "FAD2301D5B94D804A7B18D01039EE76B3324CF5E1165A13B4D39883FE00C8B65"
         //     },
-        //     "openID": "7249594a4d466c6b416e686e465857596e6d457239476944314843614f77436e766a704132722b477636343d"
+        //     "openID": "2d8fa0ccac8632b4e87610c3465049639df1101e6a137ee03f76882442be4ae1"
         // }
         // commit(types.CUST_SUCCESS, res)
         //Local Test

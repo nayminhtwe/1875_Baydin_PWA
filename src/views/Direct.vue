@@ -319,6 +319,7 @@ export default {
     },
     ...mapGetters({
       getUserToken: 'userStore/getUserToken',
+      getResponse: 'userStore/getResponse',
     })
   },
   methods: {
@@ -345,6 +346,7 @@ export default {
           this.direct.order_id = res.order_id
           this.direct.user_id = res.user_id
           let formdata = getFormData(this.direct)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/direct/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,

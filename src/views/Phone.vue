@@ -375,6 +375,7 @@ export default {
   computed: {
     ...mapGetters({
       getUserToken: 'userStore/getUserToken',
+      getResponse: 'userStore/getResponse',
     })
   },
   methods: {
@@ -391,6 +392,7 @@ export default {
           this.phone.order_id = res.order_id
           this.phone.user_id = res.user_id
           let formdata = getFormData(this.phone)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/callService/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,

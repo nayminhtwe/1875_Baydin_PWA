@@ -795,6 +795,7 @@ export default {
     ...mapGetters({
       getCurrentCategory: "categoryStore/getCurrentCategory",
       getUserToken: 'userStore/getUserToken',
+      getResponse: 'userStore/getResponse',
     })
   },
   created () {
@@ -825,6 +826,7 @@ export default {
           this.love.user_id = res.user_id
           this.love.price = this.getCurrentCategory.price
           let formdata = getFormData(this.love)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/love/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
@@ -875,6 +877,7 @@ export default {
           this.child.user_id = res.user_id
           this.child.price = this.getCurrentCategory.price
           let formdata = getFormData(this.child)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/childNaming/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
@@ -925,6 +928,7 @@ export default {
           this.oneyear.user_id = res.user_id
           this.oneyear.price = this.getCurrentCategory.price
           let formdata = getFormData(this.oneyear)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/oneyear/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
@@ -975,6 +979,7 @@ export default {
           this.business.user_id = res.user_id
           this.business.price = this.getCurrentCategory.price
           let formdata = getFormData(this.business)
+          formdata.append('user_phone', this.getResponse.customer_info.msisdn)
           Horo.post("1875/businessNaming/horoscope", formdata).then((response) => {
             this.res_status = response.data.status
             this.kbzpay.startPay(res.prepay_id, res.order_info, res.sign_app,
