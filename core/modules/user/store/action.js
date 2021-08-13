@@ -10,7 +10,8 @@ const actions = {
         //     "response": {
         //         "result": "SUCCESS",
         //         "customer_info": {
-        //             "openID": "2d8fa0ccac8632b4e87610c3465049639df1101e6a137ee03f76882442be4ae1"
+        //             "openID": "2d8fa0ccac8632b4e87610c3465049639df1101e6a137ee03f76882442be4ae1",
+        //             "msisdn": "09975705241"
         //         },
         //         "nonce_str": "E4678D4990B742DEA8BE492F7818BC6C",
         //         "sign_type": "SHA256",
