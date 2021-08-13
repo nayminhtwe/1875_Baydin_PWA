@@ -5,7 +5,10 @@ import mutations from './mutation'
 const userStore = {
   namespaced: true,
   state: {
-    response: {},
+    response: {
+      "result": false,
+      "customer_info": {},
+    },
     openID: '',
     token: localStorage.getItem('access_token') || '',
     status: '',

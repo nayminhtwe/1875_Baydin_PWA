@@ -130,10 +130,7 @@ export default {
     if (this.getCategories.length === 0) {
       this.$store.dispatch('categoryStore/allCategories')
     }
-
-
-
-    if (!this.getResponse) {
+    if (!this.getResponse.result) {
       if (!this.isAuthenticated) {
         await this.$store.dispatch('userStore/login', this.$route.query.kbzpay_token)
       } else {

@@ -32,7 +32,7 @@ const actions = {
                 commit(types.CUST_SUCCESS, response.data)
             })
             .catch(err => {
-                localStorage.removeItem('access_token') // if the request fails, remove any possible user token if possible
+                // localStorage.removeItem('access_token') // if the request fails, remove any possible user token if possible
                 commit(types.CUST_ERROR, err.response.data)
             })
 
