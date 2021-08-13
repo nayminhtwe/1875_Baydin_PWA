@@ -131,8 +131,14 @@ export default {
       this.$store.dispatch('categoryStore/allCategories')
     }
 
-    if (!this.isAuthenticated) {
-      await this.$store.dispatch('userStore/login', this.$route.query.kbzpay_token)
+
+
+    if (!this.getResponse) {
+      if (!this.isAuthenticated) {
+        await this.$store.dispatch('userStore/login', this.$route.query.kbzpay_token)
+      } else {
+        await this.$store.dispatch("userStore/queryCustInfo", this.$route.query.kbzpay_token);
+      }
     }
 
     HTTP.defaults.headers.Authorization = `Bearer ${this.getUserToken}`
