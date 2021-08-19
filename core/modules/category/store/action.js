@@ -21,7 +21,7 @@ const actions = {
 
     HTTP.defaults.headers.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTYwNTQ5OTkxN30.cW49ls9-1aRANVvbQReNGW4qqMfab-cjLJxFu4qmDaM`;
     await HTTP.get(
-      `content?category_id=1&content_category_id=${getters.getCurrentCategory.id}`
+      `content?category_id=1&size=15&content_category_id=${getters.getCurrentCategory.id}`
     ).then((response) => {
       commit(types.GET_CONTENTS_SUCCESS, response.data.data);
     });
