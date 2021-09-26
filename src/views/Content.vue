@@ -62,12 +62,15 @@ export default {
       this.category = response.data;
     });
     let content = this.getContents[0]
-    if (!content.for_date) {
-      this.contents = content
-    }
 
     if (content.for_date) {
       this.contents = this.getContents.filter(category => category.for_date == this.moment().format('YYYY-MM-DD'))[0]
+    } else if (content.start_date && content.end_date) {
+      this.contents = this.getContents.filter(
+        category => category.start_date <= this.moment().format('YYYY-MM-DD') && category.end_date >= this.moment().format('YYYY-MM-DD')
+      )[0]
+    } else {
+      this.contents = content
     }
 
   }
